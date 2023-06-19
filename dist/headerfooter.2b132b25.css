@@ -1,0 +1,189 @@
+.header {
+  background-color: black;
+  color: white;
+}
+.header .header_box {
+  width: 1245px;
+  height: 125px;
+  margin: 0 auto;
+}
+.header .header_box .gnb_outer {
+  position: relative;
+  height: 75px;
+  font-size: 14px;
+}
+.header .header_box .gnb_outer .logo {
+  width: 174px;
+  height: 47px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header .header_box .gnb_outer .logo .logo img {
+  width: 100%;
+  height: 100%;
+}
+.header .header_box .gnb_outer .gnb {
+  display: flex;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header .header_box .gnb_outer .gnb ul {
+  display: flex;
+  align-items: center;
+}
+.header .header_box .gnb_outer .gnb ul li {
+  display: inline;
+  margin-right: 17px;
+}
+.header .header_box .gnb_outer .gnb ul li a {
+  color: white;
+}
+.header .header_box .gnb_outer .gnb ul li:last-child, .header .header_box .gnb_outer .gnb ul li:nth-child(4) {
+  width: 25px;
+}
+.header .header_box .gnb_outer .gnb ul li:last-child a img, .header .header_box .gnb_outer .gnb ul li:nth-child(4) a img {
+  width: 100%;
+  height: 100%;
+}
+.header .header_box .lnb_outer {
+  display: flex;
+  font-size: 24px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  height: 50px;
+}
+.header .header_box .lnb_outer .lnb ul li {
+  display: inline;
+  justify-content: space-between;
+  margin-right: 15px;
+  font-weight: bold;
+  position: relative;
+}
+.header .header_box .lnb_outer .lnb ul li :hover .sub_menu {
+  height: 300px;
+}
+.header .header_box .lnb_outer .lnb ul li .sub_menu {
+  display: none;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  position: absolute;
+  width: 1245px;
+}
+.header .header_box .lnb_outer .lnb ul li .sub_menu li {
+  font-size: 12px;
+  font-weight: 100;
+  top: 50px;
+  display: inline-block;
+}
+.header .header_box .lnb_outer .lnb ul li a {
+  color: white;
+}
+.header .header_box .lnb_outer .lnb_rank {
+  font-size: 14px;
+}
+
+.footer .footer_outer {
+  background-color: black;
+}
+.footer .footer_outer .footer_link {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+.footer .footer_outer .footer_link .fnb {
+  margin: 28px 0;
+}
+.footer .footer_outer .footer_link .fnb li {
+  display: inline;
+  padding: 0 60px;
+  font-weight: bold;
+}
+.footer .footer_outer .footer_link .fnb li a {
+  color: black;
+}
+.footer .footer_outer .footer_inner {
+  width: 1245px;
+  margin: 0 auto;
+  color: black;
+}
+.footer .footer_outer .footer_inner .top_area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .footer_outer .footer_inner .top_area .fnb {
+  padding-top: 8px;
+}
+.footer .footer_outer .footer_inner .top_area .fnb ul li {
+  display: inline;
+  padding-right: 30px;
+  font-size: 12px;
+}
+.footer .footer_outer .footer_inner .top_area .fnb ul li :first-child {
+  padding-left: 10px;
+}
+.footer .footer_outer .footer_inner .top_area .fnb ul li a {
+  color: white;
+}
+.footer .footer_outer .footer_inner .top_area .sns ul li {
+  display: inline;
+  padding: 0 15px;
+}
+.footer .footer_outer .footer_inner .top_area .sns ul li a {
+  font-size: 45px;
+  color: white;
+}
+.footer .footer_outer .footer_inner .mid_area {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding: 0 8px;
+  height: 190px;
+}
+.footer .footer_outer .footer_inner .mid_area .copyright p {
+  font-size: 14px;
+  margin-bottom: 18px;
+  color: white;
+}
+.footer .footer_outer .footer_inner .mid_area .address {
+  width: 376px;
+}
+.footer .footer_outer .footer_inner .mid_area .address .detail {
+  color: white;
+}
+.footer .footer_outer .footer_inner .mid_area .address .detail span {
+  float: left;
+  margin-right: 120px;
+  font-weight: bold;
+  margin-top: 13px;
+}
+.footer .footer_outer .footer_inner .mid_area .address .detail p {
+  float: right;
+  margin-top: 13px;
+}
+.footer .footer_outer .footer_inner .bottom_area {
+  padding: 0 8px;
+  margin-top: 45px;
+  padding-bottom: 30px;
+}
+.footer .footer_outer .footer_inner .bottom_area .footer_menu {
+  height: 30px;
+  line-height: 30px;
+}
+.footer .footer_outer .footer_inner .bottom_area .footer_menu ul li {
+  font-size: 14px;
+  display: inline;
+  padding-right: 60px;
+}
+.footer .footer_outer .footer_inner .bottom_area .footer_menu ul li a {
+  color: white;
+}
+
+/*# sourceMappingURL=/headerfooter.2b132b25.css.map */

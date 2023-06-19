@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>칼하트 디테일페이지</title>
+    <link rel="stylesheet" href="./css/headerfooter.scss">
+    <link rel="stylesheet" href="./css/detail.scss">
+
+
+    <script src="./js/product_import.js"></script>
+    <script src="./js/products.js" defer></script>
+
+    <!--  gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script>
+
+
+    <!-- /*font-awesome cdn*/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+
+    <!-- /*remix cdn*/ -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const topBtn = document.querySelector('.top_btn')
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 200) {
+                    gsap.to(topBtn, 0.3, {
+                        opacity: 1
+                    })
+                } else {
+                    gsap.to(topBtn, 0.3, {
+                        opacity: 0
+                    })
+                }
+            }) //window_scroll_event
+
+
+            topBtn.addEventListener('click', () => {
+                gsap.to(window, 0.5, {
+                    scrollTo: 0
+                })
+            }) // top버튼 누르면 상단으로 이동
+
+
+            const inquiryBtns = document.querySelectorAll('.inquiry_btn');
+            const respondBoxes = document.querySelectorAll('.respond_box');
+
+            inquiryBtns.forEach((inquiryBtn, index) => {
+                let isOpen = false;
+
+                inquiryBtn.addEventListener('click', function () {
+                    if (!isOpen) {
+                        respondBoxes[index].style.display = 'block';
+                        isOpen = true;
+                    } else {
+                        respondBoxes[index].style.display = 'none';
+                        isOpen = false;
+                    }
+                });
+            });
+        }) // 문의답변 
+
+
+
+
+        const tabButtons = document.querySelectorAll('.tab-buttons');
+        // 탭 메뉴를 클릭할 때 발생하는 이벤트 리스너를 등록합니다.
+        tabButtons.forEach((tabMenu) => {
+            tabMenu.addEventListener('click', function () {
+                // 모든 탭 메뉴의 배경색을 초기화합니다.
+                tabButtons.forEach((menu) => {
+                    menu.style.backgroundColor = '';
+                });
+                this.style.backgroundColor = '#FFBF00';
+            });
+        });//탭버튼 클릭시 배경색 변경
+    </script>
+
+
+</head>
+
+<body>
+    <include src="./header.html"></include>
+
+    <div class="wrap_ex">
+        <div class="pr_wrap">
+        </div><!-- //pr_wrap (detail 데이터) -->
+
+        <div class="tab_area">
+            <div class="tab-buttons">
+                <button onclick="openTab(event, 'tab1')">상세정보</button>
+                <button onclick="openTab(event, 'tab2')">상품후기</button>
+                <button onclick="openTab(event, 'tab3')">상품문의</button>
+                <button onclick="openTab(event, 'tab4')">배송안내</button>
+                <button onclick="openTab(event, 'tab5')">안내사항</button>
+            </div>
+
+            <div id="tab1" class="tab">
+                <h2>
+                    <i class="fas fa-angle-right"></i>
+                    상세정보</h2>
+                <p>설명글</p>
+            </div>
+
+
+            <div class="tab-buttons">
+                <button onclick="openTab(event, 'tab1')">상세정보</button>
+                <button onclick="openTab(event, 'tab2')">상품후기</button>
+                <button onclick="openTab(event, 'tab3')">상품문의</button>
+                <button onclick="openTab(event, 'tab4')">배송안내</button>
+                <button onclick="openTab(event, 'tab5')">안내사항</button>
+            </div>
+            <div id="tab2" class="tab">
+                <div class="review_title">
+                    <p>전체(총N건)</p>
+                    <button>Best 후기 게시판 ></button>
+                </div>
+                <div class="review_grid">
+                    <div class="review border-top">
+                        <div class="review_text">
+                            <p>리뷰내용</p>
+                        </div>
+                        <div class="review_rating">
+                            <p><i class="fas fa-star"></i></p>
+                            <p><i class="fas fa-star"></i></p>
+                            <p><i class="fas fa-star"></i></p>
+                            <p><i class="fas fa-star"></i></p>
+                            <p><i class="fas fa-star"></i></p>
+                        </div>
+                        <div class="review_date">
+                            <p>2023-01-01</p>
+                        </div>
+                        <div class="review_user">
+                            <p>username<p>
+                        </div>
+
+                    </div><!-- //review -->
+                    <div class="review">
+                        <div class="review_text">
+                            <p>리뷰내용</p>
+                        </div>
+                        <div class="review_rating">
+                            <p><i class="fas fa-star"></i></p>
+                            <p><i class="fas fa-star"></i></p>
+                            <p><i class="fas fa-star"></i></p>
+                            <p><i class="fas fa-star"></i></p>
+                            <p><i class="fas fa-star"></i></p>
+                        </div>
+                        <div class="review_date">
+                            <p>2023-01-01</p>
+                        </div>
+                        <div class="review_user">
+                            <p>username<p>
+                        </div>
+                    </div><!-- //review -->
+                    <div class="review border-bottom">
+                        <div class="review_text">
+                            <p>리뷰내용</p>
+                        </div>
+                        <div class="review_rating">
+                            <p><i class="fas fa-star"></i></p>
+                            <p><i class="fas fa-star"></i></p>
+                            <p><i class="fas fa-star"></i></p>
+                            <p><i class="fas fa-star"></i></p>
+                            <p><i class="fas fa-star"></i></p>
+                        </div>
+                        <div class="review_date">
+                            <p>2023-01-01</p>
+                        </div>
+                        <div class="review_user">
+                            <p>username<p>
+                        </div>
+                    </div><!-- //review -->
+                </div>
+
+            </div>
+
+
+            <div class="tab-buttons">
+                <button onclick="openTab(event, 'tab1')">상세정보</button>
+                <button onclick="openTab(event, 'tab2')">상품후기</button>
+                <button onclick="openTab(event, 'tab3')">상품문의</button>
+                <button onclick="openTab(event, 'tab4')">배송안내</button>
+                <button onclick="openTab(event, 'tab5')">안내사항</button>
+            </div>
+            <div id="tab3" class="tab">
+                <div class="inquiry_text">
+                    <h2>제품에 관한 궁금한 점을 올리시면 신속한 답변을 드립니다.</h2>
+                    <p>배송,결제,교환/반품 등에 대한 문의는 <span>고객센터>이메일상담</span>을 이용해주세요.</p>
+                    <button>문의하기</button>
+                </div>
+                <div class="inquiry_title">
+                    <p>전체(총N건)</p>
+                </div>
+                <ul>
+                    <li class="inquiry">
+                        <div class="inquiry_outer">
+                            <div class="inquiry_state">
+                                <p>답변완료</p>
+                            </div>
+                            <div class="inquiry_txt">
+                                <p>배송은 얼마나 걸리나요?
+                                </p>
+                            </div>
+                            <div class="inquiry_date">
+                                <p>2023-01-01</p>
+                            </div>
+                            <div class="inquiry_user">
+                                <p>username</p>
+                            </div>
+                            <div class="inquiry_btn">
+                                <button><i class="fas fa-chevron-down"></i></button>
+                            </div>
+                        </div>
+                        <div class="respond_box">
+                            <div class="respond_title">
+                                <p>답변</p>
+                            </div>
+                            <div class="respond_txt">
+                                <p><span>
+                                        [CARHARTT]관리자</span>
+                                    <br />
+                                    <br>
+                                    평일 오후 2시 이전 결제 완료 된 주문건은 당일 출고되며 배송은 1~3일 정도 소요됩니다. 물류량이 많을 시 배송이 지연되는 점 양해 부탁드립니다.
+                                    <br>
+                                    상품준비 도중 시스템 오류나 제품상 문제로 상품의 발송이 늦어지거나 품절이 될 수 있습니다. 휴일(주말/공휴일 포함) 주문건은 다음 영업일에 상품준비
+                                    후 발송됩니다.
+                                    <br />
+                                    <br />
+                                    자세한 문의는 고객센터에 문의해 주시면 친절하게 상담해드리겠습니다.
+                                    오늘도 칼하트를 이용해 주셔서 감사하며 즐거운 쇼핑되세요!
+                                </p>
+                            </div>
+                        </div>
+                    </li><!-- //inquiry -->
+                    <li class="inquiry">
+                        <div class="inquiry_outer">
+                            <div class="inquiry_state">
+                                <p>
+                                    답변완료</p>
+                            </div>
+                            <div class="inquiry_txt">
+                                <p>제품에 문제가 있어서 교환하고싶은데
+                                    <i class="ri-lock-2-fill"></i>
+                                </p>
+                            </div>
+                            <div class="inquiry_date">
+                                <p>2023-01-01</p>
+                            </div>
+                            <div class="inquiry_user">
+                                <p>username</p>
+                            </div>
+                            <div class="inquiry_btn">
+                                <button><i class="fas fa-chevron-down"></i></button>
+                            </div>
+                        </div>
+                        <div class="respond_box">
+                            <div class="respond_title">
+                                <p>답변</p>
+                            </div>
+                            <div class="respond_txt">
+                                <p><span>[CARHARTT]관리자</span>
+                                    <br />
+                                    <br>
+                                    평일 오후 2시 이전 결제 완료 된 주문건은 당일 출고되며 배송은 1~3일 정도 소요됩니다. 물류량이 많을 시 배송이 지연되는 점 양해 부탁드립니다.
+                                    <br>
+                                    상품준비 도중 시스템 오류나 제품상 문제로 상품의 발송이 늦어지거나 품절이 될 수 있습니다. 휴일(주말/공휴일 포함) 주문건은 다음 영업일에 상품준비
+                                    후 발송됩니다.
+                                    <br />
+                                    <br />
+                                    자세한 문의는 고객센터에 문의해 주시면 친절하게 상담해드리겠습니다.
+                                    오늘도 칼하트를 이용해 주셔서 감사하며 즐거운 쇼핑되세요!
+                                </p>
+                            </div>
+                        </div>
+                    </li><!-- //inquiry -->
+                    <li class="inquiry">
+                        <div class="inquiry_outer">
+                            <div class="inquiry_state">
+                                <p>답변완료</p>
+                            </div>
+                            <div class="inquiry_txt">
+                                <p>사이즈 문의
+                                    <i class="ri-lock-2-fill"></i>
+                                </p>
+                            </div>
+                            <div class="inquiry_date">
+                                <p>2023-01-01</p>
+                            </div>
+                            <div class="inquiry_user">
+                                <p>username</p>
+                            </div>
+                            <div class="inquiry_btn">
+                                <button><i class="fas fa-chevron-down"></i></button>
+                            </div>
+                        </div>
+                        <div class="respond_box">
+                            <div class="respond_title">
+                                <p>답변</p>
+                            </div>
+                            <div class="respond_txt">
+                                <p><span>[CARHARTT]관리자</span>
+                                    <br />
+                                    <br>
+                                    평일 오후 2시 이전 결제 완료 된 주문건은 당일 출고되며 배송은 1~3일 정도 소요됩니다. 물류량이 많을 시 배송이 지연되는 점 양해 부탁드립니다.
+                                    <br>
+                                    상품준비 도중 시스템 오류나 제품상 문제로 상품의 발송이 늦어지거나 품절이 될 수 있습니다. 휴일(주말/공휴일 포함) 주문건은 다음 영업일에 상품준비
+                                    후 발송됩니다.
+                                    <br />
+                                    <br />
+                                    자세한 문의는 고객센터에 문의해 주시면 친절하게 상담해드리겠습니다.
+                                    오늘도 칼하트를 이용해 주셔서 감사하며 즐거운 쇼핑되세요!
+                                </p>
+                            </div>
+                        </div>
+                    </li><!-- //inquiry -->
+                    <li class="inquiry">
+                        <div class="inquiry_outer">
+                            <div class="inquiry_state">
+                                <p>미처리</p>
+                            </div>
+                            <div class="inquiry_txt">
+                                <p>배송은 얼마나 걸리나요?
+                                    <i class="ri-lock-2-fill"></i>
+                                </p>
+                            </div>
+                            <div class="inquiry_date">
+                                <p>2023-01-01</p>
+                            </div>
+                            <div class="inquiry_user">
+                                <p>username</p>
+                            </div>
+                            <div class="inquiry_btn">
+                                <button><i class="fas fa-chevron-down"></i></button>
+                            </div>
+                        </div>
+                    </li><!-- //inquiry -->
+                </ul>
+            </div>
+
+
+            <div class="tab-buttons">
+                <button onclick="openTab(event, 'tab1')">상세정보</button>
+                <button onclick="openTab(event, 'tab2')">상품후기</button>
+                <button onclick="openTab(event, 'tab3')">상품문의</button>
+                <button onclick="openTab(event, 'tab4')">배송안내</button>
+                <button onclick="openTab(event, 'tab5')">안내사항</button>
+            </div>
+            <div id="tab4" class="tab">
+                <h2>
+                    <i class="fas fa-angle-right"></i>
+                    배송안내</h2>
+                <p>CJ대한통운(1588-1255)</p>
+                <p>배송지역:전국(일부 지역 제외)</p>
+                <p>배송비:10만원 이상 구매 시 무료 배송</p>
+                <p>배송 기간: 평일 오후 2시 이전 결제 완료 된 주문건은 당일 출고되며 배송은 1-3일 정도 소요됩니다.</p>
+                <a href="">(자세히보기)</a>
+            </div>
+
+
+            <div class="tab-buttons">
+                <button onclick="openTab(event, 'tab1')">상세정보</button>
+                <button onclick="openTab(event, 'tab2')">상품후기</button>
+                <button onclick="openTab(event, 'tab3')">상품문의</button>
+                <button onclick="openTab(event, 'tab4')">배송안내</button>
+                <button onclick="openTab(event, 'tab5')">안내사항</button>
+            </div>
+            <div id="tab5" class="tab">
+                <div class="tab_info">
+                    <h2>
+                        <i class="fas fa-angle-right"></i>
+                        반품안내</h2>
+                    <p>
+                        교환/환불의 경우 모든 상품은 상품을 공급받으신 날로부터
+                        7일 이내 신청하시면 기사님께서 빠른시일내에 수거하실 예정입니다.
+                        <br />
+                        고객님의 단순 변심으로 인한 상품의 교환/반품을 요청하시는 경우,
+                        택배비용은 고객님 부담이오니 이점 양해 바랍니다.
+                        <br />
+                        칼하트(마이페이지>주문내역>주문서 상세페이지조회>교환/환불신청)
+                        <a href="">(자세히 보기)</a>
+                    </p>
+                </div>
+                <div class="tab_info">
+                    <h2>
+                        <i class="fas fa-angle-right"></i>
+                        A/S 안내</h2>
+                    <P>칼하트웹 한국 공식 판매처를 통하여 구입한 모든 제품은
+                        A/S를 받으 실 수 있습니다.
+                    </P>
+                </div>
+                <div class="tab_info">
+                    <h2>
+                        <i class="fas fa-angle-right"></i>
+                        세탁 및 취급 시 주의사항</h2>
+                    <p>제품 혼용율에 따라 세탁 및 취급 유의 사항이 변경될 수 있습니다.
+                        반드시 부착되어 있는 케어라벨 내용을 확인하신후 세탁하시기 바랍니다.
+                        <br />
+                        따라서 세탁시에는 반드시 세탁 및 취급 시 주의사항 페이지를 참고 부탁 드립니다.
+                        <a href="">(자세히 보기)</a>
+                    </p>
+                </div>
+            </div>
+
+        </div><!-- //tab_area -->
+
+
+        <script>
+            function openTab(event, tabName) {
+                const tabContent = document.getElementsByClassName("tab");
+                const tabButtons = document.getElementsByClassName("tab-buttons")[0].getElementsByTagName("button");
+                for (let i = 0; i < tabButtons.length; i++) {
+                    tabButtons[i].className = tabButtons[i].className.replace(" active", "");
+                }
+
+                document.getElementById(tabName).style.display = "block";
+                event.currentTarget.className += " active";
+
+                // 스크롤
+                const yOffset = -60; // 탭 내용 위로 스크롤할 오프셋(픽셀)
+                const tabElement = document.getElementById(tabName);
+                const y = tabElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                window.scrollTo({
+                    top: y,
+                    behavior: 'smooth'
+                });
+            }
+        </script>
+
+        </script>
+    </div><!-- //wrap_ex -->
+
+    <div class="top_btn">
+        TOP
+    </div>
+
+
+    <include src="./footer.html"></include>
+
+</body>
+
+</html>

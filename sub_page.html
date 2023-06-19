@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" goods="IE=edge">
+    <meta name="viewport" goods="width=device-width, initial-scale=1.0">
+    <title>sub_page</title>
+    <link rel="stylesheet" href="./css/sub_page.scss">
+    <link rel="stylesheet" href="./css/headerfooter.scss">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <script src="./main.js"></script>
+    <script src="./js/pagination.js" defer></script>
+    <script src="./js/product_import.js" defer></script>
+
+    <!--  gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script>
+
+    <!--     fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+    <!--     remixicon cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <include src="./header.html"></include>
+
+
+
+    <div class="visual_main">
+        <div class="visual_main_outer">
+            <div class="visual_img">
+                <img src="./images/visual_02.jpg" alt="">
+            </div>
+            <div class="visual_txt">
+                <h2>TOP</h2>
+                <p>여름에 어울리는 다양한 패턴과 소재로 제작된 상의, 이번 시즌에는 놓치지 마세요!</p>
+            </div>
+        </div><!-- //visual_main_outer -->
+    </div><!-- //visual_main -->
+
+    <div class="wrap_ex">
+        <div class="wrap">
+            <div class="sub_menu_ex">
+                <div class="title">
+                    <p>TOP</p>
+                </div>
+                <ul class="sub_menu">
+                    <li><a href="">전체</a></li>
+                    <li><a href="">자켓</a></li>
+                    <li><a href="">스웨터</a></li>
+                    <li><a href="">니트</a></li>
+                    <li><a href="">셔츠</a></li>
+                    <li><a href="">티셔츠</a></li>
+                </ul>
+
+                <div class="filter_area">
+                    <div class="filter_price filter_outer">
+                        <div class="filter_title">
+                            <p>가격</p>
+                        </div>
+                        <div class="filter_inner">
+                            <label for="price_filter">
+                                <input type="checkbox" id="price_filter">0원~50,000원
+                            </label>
+                            <label for="price_filter_02">
+                                <input type="checkbox" id="price_filter_02">50,000원~150,000원
+                            </label>
+                            <label for="price_filter_03">
+                                <input type="checkbox" id="price_filter_03">150,000원~250,000원
+                            </label>
+                            <label for="price_filter_04">
+                                <input type="checkbox" id="price_filter_04">250,000원~500,000원
+                            </label>
+                            <label for="price_filter_05">
+                                <input type="checkbox" id="price_filter_05">500,000원
+                            </label>
+                        </div><!-- //filter_inner -->
+                    </div><!-- //filter_price -->
+
+                    <div class="filter_color filter_outer">
+                        <div class="filter_title">
+                            <p>색상</p>
+                        </div>
+                        <div class="filter_inner">
+                            <button>
+                                <div class="color_black color_filter"></div>
+                            </button>
+                            <button>
+                                <div class="color_white color_filter"></div>
+                            </button>
+                            <button>
+                                <div class="color_blue color_filter"></div>
+                            </button>
+                            <button>
+                                <div class="color_red color_filter"></div>
+                            </button>
+                            <button>
+                                <div class="color_yellow color_filter"></div>
+                            </button>
+                            <button>
+                                <div class="color_brown color_filter"></div>
+                            </button>
+                            <button>
+                                <div class="color_purple color_filter"></div>
+                            </button>
+                            <button>
+                                <div class="color_gray color_filter"></div>
+                            </button>
+                            <button>
+                                <div class="color_pink color_filter"></div>
+                            </button>
+                            <button>
+                                <div class="color_darkbrown color_filter"></div>
+                            </button>
+                            <button>
+                                <div class="color_beige color_filter"></div>
+                            </button>
+                            <button>
+                                <div class="color_orange color_filter"></div>
+                            </button>
+                            <button>
+                                <div class="color_navy color_filter"></div>
+                            </button>
+                        </div><!-- //filter_inner -->
+                    </div><!-- //filter_color -->
+
+                    <div class="filter_sale filter_outer">
+                        <div class="filter_title">
+                            <p>할인율</p>
+                        </div>
+                        <div class="filter_inner">
+                            <label for="sale_filter">
+                                <input type="checkbox" id="sale_filter">0%~30%
+                            </label>
+                            <label for="sale_filter_02">
+                                <input type="checkbox" id="sale_filter_02">30%~50%
+                            </label>
+                            <label for="sale_filter_03">
+                                <input type="checkbox" id="sale_filter_03">50%~70%
+                            </label>
+                            <label for="sale_filter_04">
+                                <input type="checkbox" id="sale_filter_04">70%이상
+                            </label>
+                        </div>
+                    </div><!-- //filter_sale -->
+                </div><!-- //filter_area -->
+
+            </div><!-- //sub_menu_ex -->
+
+            <div class="goods_area">
+                <div class="filter_outer">
+                    <div class="genderbox">
+                        <ul>
+                            <li><a href="">남자</a></li>
+                            <li><a href="">여자</a></li>
+                            <li><a href="">All</a></li>
+                        </ul>
+                    </div><!-- //genderbox -->
+
+                    <div class="checkbox">
+                        <label class="list_checkbox">
+                            <input type="checkbox" value="">품절상품 제외</label>
+                        <select class="selectbox">
+                            <option>신상품순</option>
+                            <option>인기순</option>
+                            <option>가격순</option>
+                        </select>
+                        <div class="filter_key">
+                            <p>필터</p>
+                            <button class="filter_btn">
+                                ON
+                            </button>
+                        </div><!-- //filter_btn -->
+                    </div><!-- //checkbox -->
+                </div><!-- //filter_outer -->
+
+                <div class="goods_outer" id="data">
+                </div><!-- //goods_outer (데이터) -->
+
+            </div><!-- //goods_area -->
+
+
+        </div><!-- //wrap -->
+        
+        <div class="pagination">
+    
+        </div><!-- //pagination -->
+
+    </div><!-- //wrap_ex -->
+
+
+    <div class="top_btn">
+        TOP
+    </div>
+
+    <include src="./footer.html"></include>
+</body>
+
+</html>
