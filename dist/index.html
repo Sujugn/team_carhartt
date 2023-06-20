@@ -27,6 +27,8 @@
 
     <!--     jquery cdn -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+
 <script src="/main.54166fbf.js"></script><script src="/headerfooter.2b132b25.js"></script></head>
 
 <body>
@@ -41,7 +43,7 @@
             </div><!-- //logo -->
             <nav class="gnb">
                 <ul>
-                    <li><a href="">로그인</a></li>
+                    <li><a href="/login.html">로그인</a></li>
                     <li><a href="">회원가입</a></li>
                     <li><a href="">주문조회</a></li>
                     <li class="search_icon"><a href="">
@@ -279,7 +281,6 @@ function redirectToProductDetail(productId) {
   // 상세 페이지로 이동
   window.location.href = detailPageUrl;
 }</script>
-
 
         <div class="main_product">
             <div class="main_title">
@@ -679,6 +680,43 @@ topBtn.addEventListener('click', function () {
     scrollTo: 0
   });
 }); // top버튼 누르면 상단으로 이동</script>
+
+
+<script>document.addEventListener('DOMContentLoaded', function () {
+  var mdContent = document.querySelectorAll('.md_content');
+  mdContent.forEach(function (value) {
+    value.addEventListener('mouseover', function () {
+      mdContent.forEach(function (content) {
+        content.style.width = '200px';
+        content.querySelector('.md_content_text').style.display = 'none';
+        content.style.backgroundImage = ''; // 초기화: 배경 이미지 없음
+      });
+
+      value.style.width = '615px';
+      value.querySelector('.md_content_text').style.display = 'block';
+      var id = value.id;
+      switch (id) {
+        case 'md_01':
+          value.style.backgroundImage = 'url(./images/md_01_hover.jpg)';
+          break;
+        case 'md_02':
+          value.style.backgroundImage = 'url(./images/md_02_hover.jpg)';
+          break;
+        case 'md_03':
+          value.style.backgroundImage = 'url(./images/md_03_hover.jpg)';
+          break;
+        // 추가적인 ID에 따른 배경 이미지 설정
+        // case 'md_04':
+        //   value.style.backgroundImage = 'url(./images/md_04_hover.jpg)';
+        //   break;
+        // ...
+        default:
+          value.style.backgroundImage = ''; // 배경 이미지가 없는 경우 설정
+          break;
+      }
+    });
+  });
+}); //md_content</script>
 
 </div></body>
 

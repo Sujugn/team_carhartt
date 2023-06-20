@@ -117,62 +117,82 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
-var bundleURL = null;
-function getBundleURLCached() {
-  if (!bundleURL) {
-    bundleURL = getBundleURL();
-  }
-  return bundleURL;
-}
-function getBundleURL() {
-  // Attempt to find the URL of the current script and use that as the base URL
-  try {
-    throw new Error();
-  } catch (err) {
-    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
-    if (matches) {
-      return getBaseURL(matches[0]);
+})({"js/main.js":[function(require,module,exports) {
+document.addEventListener('DOMContentLoaded', function () {
+  var topBtn = document.querySelector('.top_btn');
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 200) {
+      gsap.to(topBtn, 0.3, {
+        opacity: 1
+      });
+    } else {
+      gsap.to(topBtn, 0.3, {
+        opacity: 0
+      });
     }
-  }
-  return '/';
-}
-function getBaseURL(url) {
-  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)?\/[^/]+(?:\?.*)?$/, '$1') + '/';
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-},{}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
-var bundle = require('./bundle-url');
-function updateLink(link) {
-  var newLink = link.cloneNode();
-  newLink.onload = function () {
-    link.remove();
-  };
-  newLink.href = link.href.split('?')[0] + '?' + Date.now();
-  link.parentNode.insertBefore(newLink, link.nextSibling);
-}
-var cssTimeout = null;
-function reloadCSS() {
-  if (cssTimeout) {
-    return;
-  }
-  cssTimeout = setTimeout(function () {
-    var links = document.querySelectorAll('link[rel="stylesheet"]');
-    for (var i = 0; i < links.length; i++) {
-      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
-        updateLink(links[i]);
+  }); //window_scroll_event
+
+  topBtn.addEventListener('click', function () {
+    gsap.to(window, 0.5, {
+      scrollTo: 0
+    });
+  }); // top버튼 누르면 상단으로 이동
+
+  var filterBtn = document.querySelector('.filter_btn');
+  var filterArea = document.querySelector('.filter_area');
+  var state = false;
+  filterBtn.addEventListener('click', function () {
+    if (!state) {
+      filterArea.style.display = 'block';
+      state = true;
+    } else {
+      filterArea.style.display = 'none';
+      state = false;
+    }
+  }); //필터 ON/OFF
+}); //DOCUMENT
+
+window.addEventListener('DOMContentLoaded', function () {
+  var goods = document.querySelectorAll('.goods');
+  goods.forEach(function (value) {});
+}); //WINDOW
+
+document.addEventListener('DOMContentLoaded', function () {
+  var mdContent = document.querySelectorAll('.md_content');
+  mdContent.forEach(function (value) {
+    value.addEventListener('mouseover', function () {
+      mdContent.forEach(function (content) {
+        content.style.width = '200px';
+        content.querySelector('.md_content_text').style.display = 'none';
+        content.style.backgroundImage = ''; // 초기화: 배경 이미지 없음
+      });
+
+      value.style.width = '615px';
+      value.querySelector('.md_content_text').style.display = 'block';
+      var id = value.id;
+      switch (id) {
+        case 'md_01':
+          value.style.backgroundImage = 'url(./images/md_01_hover.jpg)';
+          break;
+        case 'md_02':
+          value.style.backgroundImage = 'url(./images/md_02_hover.jpg)';
+          break;
+        case 'md_03':
+          value.style.backgroundImage = 'url(./images/md_03_hover.jpg)';
+          break;
+        // 추가적인 ID에 따른 배경 이미지 설정
+        // case 'md_04':
+        //   value.style.backgroundImage = 'url(./images/md_04_hover.jpg)';
+        //   break;
+        // ...
+        default:
+          value.style.backgroundImage = ''; // 배경 이미지가 없는 경우 설정
+          break;
       }
-    }
-    cssTimeout = null;
-  }, 50);
-}
-module.exports = reloadCSS;
-},{"./bundle-url":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"css/headerfooter.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+    });
+  });
+}); //md_content
+},{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -197,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51957" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51863" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
@@ -341,5 +361,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
-//# sourceMappingURL=/headerfooter.2b132b25.js.map
+},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/main.js"], null)
+//# sourceMappingURL=/main.fb6bbcaf.js.map

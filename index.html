@@ -27,6 +27,8 @@
 
     <!--     jquery cdn -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+
 </head>
 
 <body>
@@ -188,24 +190,23 @@
 
         <script>
             // 각 상품 요소에 이벤트 리스너 추가
-            var productElements = document.querySelectorAll('.best_goods');
-            productElements.forEach(function (productElement) {
-                productElement.addEventListener('click', function () {
-                    var productId = productElement.dataset.productId;
+            const productElements = document.querySelectorAll('.best_goods');
+            productElements.forEach((productElement) => {
+                productElement.addEventListener('click', () => {
+                    const productId = productElement.dataset.productId;
                     redirectToProductDetail(productId);
                 });
             });
-
+        
             // 상세 페이지로 이동하는 함수
             function redirectToProductDetail(productId) {
                 // 상세 페이지 URL 구성
-                var detailPageUrl = './detail.html' + '?productId=' + productId;
-
+                const detailPageUrl = './detail.html' + '?productId=' + productId;
+        
                 // 상세 페이지로 이동
                 window.location.href = detailPageUrl;
             }
         </script>
-
 
         <div class="main_product">
             <div class="main_title">
@@ -549,6 +550,48 @@
                 })
             }) // top버튼 누르면 상단으로 이동
         </script>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const mdContent = document.querySelectorAll('.md_content');
+    mdContent.forEach((value) => {
+        value.addEventListener('mouseover', function () {
+            mdContent.forEach((content) => {
+                content.style.width = '200px';
+                content.querySelector('.md_content_text').style.display =
+                    'none';
+                content.style.backgroundImage = ''; // 초기화: 배경 이미지 없음
+            });
+
+            value.style.width = '615px';
+            value.querySelector('.md_content_text').style.display = 'block';
+
+            const id = value.id;
+            switch (id) {
+                case 'md_01':
+                    value.style.backgroundImage = 'url(./images/md_01_hover.jpg)';
+                    break;
+                case 'md_02':
+                    value.style.backgroundImage = 'url(./images/md_02_hover.jpg)';
+                    break;
+                case 'md_03':
+                    value.style.backgroundImage = 'url(./images/md_03_hover.jpg)';
+                    break;
+                    // 추가적인 ID에 따른 배경 이미지 설정
+                    // case 'md_04':
+                    //   value.style.backgroundImage = 'url(./images/md_04_hover.jpg)';
+                    //   break;
+                    // ...
+                default:
+                    value.style.backgroundImage = ''; // 배경 이미지가 없는 경우 설정
+                    break;
+            }
+        });
+    });
+}); //md_content
+
+</script>
 
 </body>
 
