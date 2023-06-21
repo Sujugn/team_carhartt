@@ -40,40 +40,44 @@
         <div class="visual_swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <!-- <div class="visual_main">
-                        <img src="./images/visual_01.jpg" alt="비주얼01">
-                    </div> -->
-                    <div class="visual_textbox">
-                        <div class="visual_text">
-                            <h2>Slide1</h2>
-                            <p>설명</p>
-                        </div>
-                        <div class="visual_btn">
-                            <button>보러가기</button>
-                        </div>
+                    <div class="visual_main">
+                        <img src="./images/swiper_visual_03.jpg" alt="비주얼03">
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="visual_textbox">
-                        <div class="visual_text">
-                            <h2>Slide2</h2>
-                            <p>설명</p>
-                        </div>
-                        <div class="visual_btn">
-                            <button>보러가기</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="visual_text">
                         <div class="visual_textbox">
                             <div class="visual_text">
-                                <h2>Slide3</h2>
-                                <p>설명</p>
+                                <h2>S/S Heritage Pants</h2>
+                                <p> 워크웨어와 클래식 케주얼의 경계 속 칼하트윕의 헤리티지를 만나보세요</p>
                             </div>
                             <div class="visual_btn">
                                 <button>보러가기</button>
                             </div>
+                        </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="visual_main">
+                        <!-- <img src="./images/swiper_visual_02.jpg" alt="비주얼02"> -->
+                    </div>
+                    <div class="visual_textbox">
+                        <div class="visual_text">
+                            <h2>S/S23: High Tide Editorial</h2>
+                            <p>가볍고 시원한 반팔 셔츠와 해변 액세서리로 다양한 스타일링을 즐겨보세요!</p>
+                        </div>
+                        <div class="visual_btn">
+                            <button>보러가기</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="visual_main">
+                        <!-- <img src="./images/swiper_visual.jpg" alt="비주얼01"> -->
+                    </div>
+                    <div class="visual_textbox">
+                        <div class="visual_text">
+                            <h2> SS23 NEW DELIVERY</h2>
+                            <p>다채로운 스타일링을 지금 바로 확인해 보세요</p>
+                        </div>
+                        <div class="visual_btn">
+                            <button>보러가기</button>
                         </div>
                     </div>
                 </div>
@@ -312,7 +316,7 @@
                     </div>
                     <div class="img_outer">
                         <div class="lookbook_img look_01 lookbook_content">
-                            <!-- <img src="./images/lookbook_02.jpg" alt="lookbook_02"> -->
+                            <!-- <img src="./images/lookbook_small.jpg" alt="lookbook_02"> -->
                         </div>
                         <div class="lookbook_img look_02 lookbook_content">
                             <!-- <img src="./images/lookbook_02.jpg" alt="lookbook_03"> -->
@@ -436,6 +440,10 @@
 
         <script>
             var swiper = new Swiper(".visual_swiper", {
+                //autoplay: {
+        //delay: 3000, 
+        //disableOnInteraction: false,
+    //},
                 spaceBetween: 70,
                 effect: "fade",
                 navigation: {
@@ -447,30 +455,6 @@
                     clickable: true,
                 },
             });
-        </script>
-
-        <script>
-            // Swiper 초기화
-            var swiper = new Swiper('.swiper-container', {
-                // 설정 옵션들...
-            });
-
-            // 텍스트 네비게이션 추가 함수
-            function addNavigationText() {
-                var navigationBullets = document.querySelectorAll('.swiper-pagination-bullet');
-
-                navigationBullets.forEach(function (bullet, index) {
-                    var textElement = document.createElement('span');
-                    textElement.className = 'swiper-pagination-text';
-                    textElement.textContent = 'Slide ' + (index + 1);
-
-                    bullet.appendChild(textElement);
-                });
-            }
-
-            // 텍스트 네비게이션 추가 호출
-            addNavigationText();
-            //swiper 텍스트 넣기
         </script>
 
 
@@ -592,6 +576,29 @@
 }); //md_content
 
 </script>
+
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+    });
+
+function addNavigationText() {
+    var navigationBullets = document.querySelectorAll('.swiper-pagination-bullet');
+
+    var slideTexts = ['S/S Heritage Pants', 'S/S23 High Tide Editoria', 'SS23 NEW DELIVERY']; 
+    navigationBullets.forEach(function (bullet, index) {
+        var textElement = document.createElement('span');
+        textElement.className = 'swiper-pagination-text';
+        textElement.textContent = slideTexts[index]; 
+        bullet.appendChild(textElement);
+    });
+}
+
+addNavigationText();
+</script>
+
+
+
 
 </body>
 

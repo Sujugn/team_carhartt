@@ -91,6 +91,9 @@ input{
                 a{
                     color: black;
                 }
+                &:hover{
+                    font-weight: bold;
+                }
             }
         }
 

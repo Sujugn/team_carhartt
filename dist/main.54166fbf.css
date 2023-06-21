@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Permanent+Marker&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
 * {
@@ -32,10 +33,11 @@ h2 {
   height: 300px;
 }
 .swiper .swiper-wrapper .swiper-slide p {
+  top: 0;
+  left: 0;
   position: absolute;
   display: inline-block;
   width: 45px;
-  height: 45px;
   font-size: 17px;
   text-align: center;
   background-color: #FFBF00;
@@ -96,24 +98,56 @@ h2 {
   height: 350px;
 }
 .visual_main_outer .visual_swiper .swiper-wrapper .swiper-slide {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   background-color: whitesmoke;
 }
+.visual_main_outer .visual_swiper .swiper-wrapper .swiper-slide .visual_main {
+  width: 1245px;
+  height: 350px;
+  overflow: hidden;
+}
+.visual_main_outer .visual_swiper .swiper-wrapper .swiper-slide .visual_main img {
+  width: 100%;
+  height: 100%;
+}
+.visual_main_outer .visual_swiper .swiper-wrapper .swiper-slide .visual_textbox {
+  position: absolute;
+  bottom: 85px;
+}
+.visual_main_outer .visual_swiper .swiper-wrapper .swiper-slide .visual_textbox .visual_text h2 {
+  font-family: "Lato", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+  color: white;
+}
 .visual_main_outer .visual_swiper .swiper-wrapper .swiper-slide .visual_textbox .visual_text p {
-  margin: 20px 0;
+  margin: 10px 0;
+  color: white;
+  font-weight: 100;
+}
+.visual_main_outer .visual_swiper .swiper-wrapper .swiper-slide .visual_textbox .visual_btn {
+  font-family: "Lato", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
 .visual_main_outer .visual_swiper .swiper-wrapper .swiper-slide .visual_textbox .visual_btn button {
-  border-radius: 5px;
   border: none;
-  background-color: #FFBF00;
-  width: 129px;
+  background-color: black;
+  color: white;
+  width: 120px;
   height: 40px;
   cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 5px;
+}
+.visual_main_outer .visual_swiper .swiper-wrapper .swiper-slide .visual_textbox .visual_btn button:hover {
+  background-color: #FFBF00;
+  color: black;
 }
 .visual_main_outer .visual_swiper .swiper-wrapper .swiper-button-prev,
 .visual_main_outer .visual_swiper .swiper-wrapper .swiper-button-next {
-  background-color: #fff;
   opacity: 0.5;
   padding: 15px 5px;
   border-radius: 20px;
@@ -125,10 +159,10 @@ h2 {
   font-weight: 600 !important;
 }
 .visual_main_outer .visual_swiper .swiper-wrapper .swiper-pagination {
-  bottom: -78px;
+  bottom: -85px;
 }
 .visual_main_outer .visual_swiper .swiper-wrapper .swiper-pagination .swiper-pagination-bullet {
-  margin: 0 50px;
+  margin: 0 150px;
 }
 .visual_main_outer .swiper {
   width: 100%;
@@ -359,6 +393,38 @@ h2 {
   right: 30px;
   opacity: 0;
   border-radius: 50%;
+}
+
+.swiper-pagination-bullet {
+  background-color: white !important; /* 원하는 색상으로 변경 */
+}
+.swiper-pagination-bullet .swiper-pagination-text {
+  display: inline-block;
+  font-size: 12px;
+}
+.swiper-pagination-bullet .swiper-pagination-text span {
+  display: inline-block;
+}
+
+.swiper-pagination-bullet-active .swiper-pagination-text {
+  display: inline-block;
+  font-size: 12px;
+}
+.swiper-button-next {
+  background: url(/right_arrow.eef12abd.png) no-repeat;
+  background-size: 50% auto;
+  background-position: center;
+}
+
+.swiper-button-prev {
+  background: url(/left_arrow.820a8727.png) no-repeat;
+  background-size: 50% auto;
+  background-position: center;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
 }
 
 /*# sourceMappingURL=/main.54166fbf.css.map */
