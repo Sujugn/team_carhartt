@@ -940,7 +940,7 @@ var NEW = [{
   description: "W ALMA PANT는 면100% 'PERRY' 데님 소재의 워크 팬츠입니다. 루즈 테이퍼드 핏에 밑위는 하이 웨이스트입니다. 데님과 립스탑 소재가 믹스되어 있는 디테일이 있습니다. 무릎 부분은 패치로 덧대여져 있습니다. 지퍼 플라이 형식이며, 제품 측면에는 툴 포켓, 해머 루프가 있습니다. 후면 포켓에는 스퀘어 라벨이 부착되어 있습니다. "
 }]; //main_page NEW
 exports.NEW = NEW;
-},{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -965,7 +965,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61896" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64178" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
@@ -1109,5 +1109,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/products.js"], null)
+},{}]},{},["../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/products.js"], null)
 //# sourceMappingURL=/products.556f8683.js.map

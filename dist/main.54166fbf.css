@@ -40,7 +40,7 @@ h2 {
   width: 45px;
   font-size: 17px;
   text-align: center;
-  background-color: #FFBF00;
+  background-color: #ffbf00;
   font-weight: bold;
 }
 .swiper .swiper-wrapper .swiper-slide img {
@@ -75,7 +75,7 @@ h2 {
   bottom: 50px;
   cursor: pointer;
   border: none;
-  background-color: #FFBF00;
+  background-color: #ffbf00;
   width: 105px;
   height: 35px;
   border-radius: 5px 5px;
@@ -143,7 +143,7 @@ h2 {
   border-radius: 5px;
 }
 .visual_main_outer .visual_swiper .swiper-wrapper .swiper-slide .visual_textbox .visual_btn button:hover {
-  background-color: #FFBF00;
+  background-color: #ffbf00;
   color: black;
 }
 .visual_main_outer .visual_swiper .swiper-wrapper .swiper-button-prev,
@@ -159,10 +159,16 @@ h2 {
   font-weight: 600 !important;
 }
 .visual_main_outer .visual_swiper .swiper-wrapper .swiper-pagination {
+  margin-bottom: 30px;
+  width: 100%;
+  display: flex;
   bottom: -85px;
 }
 .visual_main_outer .visual_swiper .swiper-wrapper .swiper-pagination .swiper-pagination-bullet {
   margin: 0 150px;
+}
+.visual_main_outer .visual_swiper .swiper-wrapper .swiper-pagination .swiper-pagination-text {
+  width: 300px;
 }
 .visual_main_outer .swiper {
   width: 100%;
@@ -343,7 +349,7 @@ h2 {
   left: 50%;
   transform: translateX(-50%);
   bottom: 60px;
-  background-color: #FFBF00;
+  background-color: #ffbf00;
   width: 105px;
   height: 35px;
   font-size: 12px;
