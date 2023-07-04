@@ -123,7 +123,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.products = exports.best = exports.NEW = void 0;
+exports.products = exports.NEW = void 0;
 var products = [{
   name: "반팔 켄웨이 니트 폴로 블랙",
   engName: "S/S KENWAY KNIT POLO",
@@ -521,259 +521,7 @@ var products = [{
   image: "./images/Top_66.jpg",
   hoverImage: "./images/Top_66_hover.jpg"
 }]; // subpage_top
-
-// const itemsPerPage = 12; // 한 페이지에 보여줄 항목 수
-
-// function displayData(page) {
-//     const dataContainer = document.getElementById('data');
-//     const start = (page - 1) * itemsPerPage;
-//     const end = start + itemsPerPage;
-
-//     dataContainer.innerHTML = '';
-
-//     for (let i = start; i < end; i++) {
-//         if (data[i]) {
-//             const item = document.createElement('div');
-//             item.textContent = data[i];
-//             dataContainer.appendChild(item);
-//         }
-//     }
-// }
-
-// function setupPagination() {
-//     const pageCount = Math.ceil(data.length / itemsPerPage);
-//     const paginationContainer = document.querySelector('.pagination');
-
-//     paginationContainer.innerHTML = '';
-
-//     for (let i = 1; i <= pageCount; i++) {
-//         const link = document.createElement('a');
-//         link.href = '#';
-//         link.textContent = i;
-
-//         if (i === 1) {
-//             link.classList.add('active');
-//         }
-
-//         link.addEventListener('click', function () {
-//             const currentActive = document.querySelector('.pagination a.active');
-//             currentActive.classList.remove('active');
-//             link.classList.add('active');
-//             displayData(i);
-//         });
-
-//         paginationContainer.appendChild(link);
-//     }
-// }
-
-// displayData(1);
-// setupPagination();
 exports.products = products;
-var best = [{
-  id: "best_01",
-  name: "반팔 타마스 포켓 티셔츠 블랙",
-  price: "88,000",
-  code: "CA23SSTSSS00002019",
-  accumulate: "",
-  percent: "",
-  mainImg: "./images/best_01.jpg",
-  detailImg01: "./images/detail01_1.jpg",
-  detailImg02: "./images/detail01_2.jpg",
-  detailImg03: "./images/detail01_3.jpg",
-  detailImg04: "./images/detail01_4.jpg",
-  detailImg05: "./images/detail01_5.jpg",
-  colorImg01: "./images/best_02.jpg",
-  colorImg02: "",
-  colorImg03: "",
-  relateImg: "./images/relateimg_01.jpg",
-  relateImghover: "./images/relateimghover_01.jpg",
-  relateName: "SINGLE KNEE CHROMO PANT DEARBORN",
-  relateColor: "BLACK CHROMO",
-  relatePrice: "156,000",
-  recentImg: "",
-  recentName: "",
-  recentColor: "",
-  recentPrice: "",
-  description: "S/S TAMAS POCKET T-SHIRT는 오가닉 코튼100% 싱글 저지 소재의 반팔 티셔츠입니다. 루즈 핏이며, 가슴 포켓이 있습니다. 후면에 그래픽 프린트가 있습니다.- 세탁 및 다림 시 그래픽의 손상 및 변형이 생길 수 있으므로, 뒤집어 세탁 및 다림을 권장합니다."
-}, {
-  id: "best_02",
-  name: "반팔 타마스 포켓 티셔츠 화이트",
-  price: "88,000",
-  code: "CA23SSTSSS00040025",
-  accumulate: "",
-  percent: "",
-  mainImg: "./images/best_02.jpg",
-  detailImg01: "./images/detail02_1.jpg",
-  detailImg02: "./images/detail02_2.jpg",
-  detailImg03: "./images/detail02_3.jpg",
-  detailImg04: "./images/detail02_4.jpg",
-  detailImg05: "./images/detail02_5.jpg",
-  colorImg01: "./images/best_01.jpg",
-  colorImg02: "",
-  colorImg03: "",
-  relateImg: "./images/relateimg_02.jpg",
-  relateImghover: "./images/relateimghover_02.jpg",
-  relateName: "DOUBLE KNEE PANT FAIRFIELD",
-  relateColor: "BLUE HEAVY STONE WASH",
-  relatePrice: "173,000",
-  recentImg: "",
-  recentName: "",
-  recentColor: "",
-  recentPrice: "",
-  description: "DOUBLE KNEE PANT는 오가닉 코튼 100% 'FAIRFIELD' 데님 소재의 워크 팬츠입니다. 릴렉스드 스트레이트 핏에 밑위는 레귤러 웨이스트입니다. 전체적으로 트리플 스티칭 되있으며, 지퍼 플라이 형식입니다. 무릎 부분은 이중으로 덧대어져 있습니다. 제품 측면에는 툴 포켓, 해머 루프가 있으며, 후면 포켓에 스퀘어 라벨이 부착되어 있습니다."
-}, {
-  id: "best_03",
-  name: "싱글 니 쇼츠 스미스 블루 스톤 워시드",
-  price: "135,000",
-  code: "CA23SSSTWO00760001",
-  accumulate: "",
-  percent: "",
-  mainImg: "./images/mainimg_03.jpg",
-  detailImg01: "./images/detail03_1.jpg",
-  detailImg02: "./images/detail03_2.jpg",
-  detailImg03: "./images/detail03_3.jpg",
-  detailImg04: "./images/detail03_4.jpg",
-  detailImg05: "./images/detail03_5.jpg",
-  colorImg01: "./images/best_04.jpg",
-  colorImg02: "",
-  colorImg03: "",
-  relateImg: "./images/relateimg_03.jpg",
-  relateImghover: "./images/relateimghover_03.jpg",
-  relateName: "S/S BLACK JACK SHIRT",
-  relateColor: "BLACK JACK, BLACK",
-  relatePrice: " 143,000",
-  recentImg: "",
-  recentName: "",
-  recentColor: "",
-  recentPrice: "",
-  description: "SINGLE KNEE SHORT는 면100% 'SMITH' 데님 소재의 워크 쇼츠입니다. 릴렉스드 핏에 밑위는 레귤러 웨이스트입니다. 전체적으로 트리플 스티칭 되있으며, 지퍼 플라이 형식입니다. 제품 측면에는 툴 포켓, 해머 루프가 있으며, 후면 포켓에 스퀘어 라벨이 부착되어 있습니다."
-}, {
-  id: "best_04",
-  name: "싱글 니 쇼츠 스미스 블루 스톤 블리치드",
-  price: "148,000",
-  code: "CA23SSSTWO00759001",
-  accumulate: "",
-  percent: "",
-  mainImg: "./images/best_04.jpg",
-  detailImg01: "./images/detail04_1.jpg",
-  detailImg02: "./images/detail04_2.jpg",
-  detailImg03: "./images/detail04_3.jpg",
-  detailImg04: "./images/detail04_4.jpg",
-  detailImg05: "./images/detail04_5.jpg",
-  colorImg01: "./images/best_03.jpg",
-  colorImg02: "",
-  colorImg03: "",
-  relateImg: "./images/relateimg_04.jpg",
-  relateImghover: "./images/relateimghover_04.jpg",
-  relateName: "S/S COAST STATE T-SHIRT",
-  relateColor: "WHITE",
-  relatePrice: "98,000",
-  recentImg: "",
-  recentName: "",
-  recentColor: "",
-  recentPrice: "",
-  description: "SINGLE KNEE SHORT는 면100% 'SMITH' 데님 소재의 워크 쇼츠입니다. 릴렉스드 핏에 밑위는 레귤러 웨이스트입니다. 전체적으로 트리플 스티칭 되있으며, 지퍼 플라이 형식입니다. 제품 측면에는 툴 포켓, 해머 루프가 있으며, 후면 포켓에 스퀘어 라벨이 부착되어 있습니다."
-}, {
-  id: "best_05",
-  name: "코스탈 자켓 블랙/화이트",
-  price: "248,000",
-  code: "CA23SSJAJL00358002",
-  accumulate: "",
-  percent: "",
-  mainImg: "./images/best_05.jpg",
-  detailImg01: "./images/detail05_1.jpg",
-  detailImg02: "./images/detail05_2.jpg",
-  detailImg03: "./images/detail05_3.jpg",
-  detailImg04: "./images/detail05_4.jpg",
-  detailImg05: "./images/detail05_5.jpg",
-  colorImg01: "./images/best_07.jpg",
-  relateImg: "./images/relateimg_05.jpg",
-  relateImghover: "./images/relateimghover_05.jpg",
-  relateName: "ISLAND SWIM TRUNKS",
-  relateColor: "KIWI/BLACK",
-  relatePrice: "108,000",
-  recentImg: "",
-  recentName: "",
-  recentColor: "",
-  recentPrice: "",
-  description: "COASTAL JACKET은 면100% 포플린 소재의 자켓입니다. 안감은 면 포플린 소재로 이루어져 있습니다. 후드는 팩커블 형태로 조절이 가능합니다. 정면은 지퍼와 스냅으로 여닫을 수 있습니다. 소매에 스크립트 자수가 있습니다."
-}, {
-  id: "best_06",
-  name: "아일랜드 스윔 트렁크 마리나 프린트",
-  price: "123,000",
-  code: "CA23SSSMSS11208001",
-  accumulate: "",
-  percent: "",
-  mainImg: "./images/best_06.jpg",
-  detailImg01: "./images/detail06_1.jpg",
-  detailImg02: "./images/detail06_2.jpg",
-  detailImg03: "./images/detail06_3.jpg",
-  detailImg04: "./images/detail06_4.jpg",
-  detailImg05: "./images/detail06_5.jpg",
-  relateImg: "./images/relateimg_06.jpg",
-  relateImghover: "./images/relateimghover_06.jpg",
-  relateName: "COAST STATE SWEATER",
-  relateColor: "WHITE",
-  relatePrice: "185,000",
-  recentImg: "",
-  recentName: "",
-  recentColor: "",
-  recentPrice: "",
-  description: "COAST STATE SWEATER는 면100% 소재의 스웨터입니다. 솔기 부분들이 오픈되어 있는 디테일이 있으며, 그래픽 자카드가 있습니다."
-},
-//컬러추가
-{
-  id: "best_07",
-  name: "코스탈 자켓 화이트/블랙",
-  price: " 248,000",
-  code: "CA23SSJAJL00266002",
-  accumulate: "",
-  percent: "",
-  mainImg: "./images/best_07.jpg",
-  detailImg01: "./images/detail07_1.jpg",
-  detailImg02: "./images/detail07_2.jpg",
-  detailImg03: "./images/detail07_3.jpg",
-  detailImg04: "./images/detail07_4.jpg",
-  detailImg05: "./images/detail07_5.jpg",
-  relateImg: "./images/relateimg_07.jpg",
-  relateImghover: "./images/relateimghover_07.jpg",
-  relateName: "DOUBLE KNEE PANT FAIRFIELD",
-  relateColor: "BLUE STONE WASHED",
-  relatePrice: "158,000",
-  recentImg: "",
-  recentName: "",
-  recentColor: "",
-  recentPrice: "",
-  description: "COASTAL JACKET은 면100% 포플린 소재의 자켓입니다. 안감은 면 포플린 소재로 이루어져 있습니다. 후드는 팩커블 형태로 조절이 가능합니다. 정면은 지퍼와 스냅으로 여닫을 수 있습니다. 소매에 스크립트 자수가 있습니다."
-},
-//컬러추가
-{
-  id: "best_08",
-  name: "콜 카고 쇼츠 모라가 키위 가먼트 다이드",
-  price: " 148,000",
-  code: "CA23SSSTCA11139001",
-  accumulate: "",
-  percent: "",
-  mainImg: "./images/best_08.jpg",
-  detailImg01: "./images/detail08_1.jpg",
-  detailImg02: "./images/detail08_2.jpg",
-  detailImg03: "./images/detail08_3.jpg",
-  detailImg04: "./images/detail08_4.jpg",
-  detailImg05: "./images/detail08_5.jpg",
-  relateImg: "./images/relateimg_07.jpg",
-  relateImghover: "./images/relateimghover_07.jpg",
-  relateName: "S/S SOUVENIR VALLEY T-SHIRT",
-  relateColor: "NATURAL/BLACK",
-  relatePrice: "95,000",
-  recentImg: "",
-  recentName: "",
-  recentColor: "",
-  recentPrice: "",
-  description: "COASTAL JACKET은 면100% 포플린 소재의 자켓입니다. 안감은 면 포플린 소재로 이루어져 있습니다. 후드는 팩커블 형태로 조절이 가능합니다. 정면은 지퍼와 스냅으로 여닫을 수 있습니다. 소매에 스크립트 자수가 있습니다."
-}
-//컬러추가
-]; //BEST
-exports.best = best;
 var NEW = [{
   id: "new_01",
   name: "반팔 윈튼 셔츠 쥐라/유카 스톤 워시드",
@@ -944,26 +692,20 @@ exports.NEW = NEW;
 "use strict";
 
 var _products = require("./products.js");
-var goodsOuter = document.querySelector('.goods_area .goods_outer');
+var goodsOuter = document.querySelector(".goods_area .goods_outer");
 //sub_page TOP 상품목록
-var prWrap = document.querySelector('.wrap_ex .pr_wrap');
+var prWrap = document.querySelector(".wrap_ex .pr_wrap");
 //detail best상품
 
 console.log(goodsOuter);
 console.log(prWrap);
 _products.products.forEach(function (product) {
-  var element = document.createElement('div');
-  element.setAttribute('class', 'goods');
+  var element = document.createElement("div");
+  element.setAttribute("class", "goods");
   element.innerHTML = "\n            <div class=\"goods\">\n                <div class=\"goods_img\">\n                <img src=\"".concat(product.image, "\">\n                <img src=\"").concat(product.hoverImage, "\">\n                    <div class=\"goods_cart\">\n                        <i class=\"ri-shopping-cart-2-line\"></i>\n                    </div>\n                </div>\n\n                <div class=\"goods_info info_best\">\n                    <p>BEST</p>\n                </div>\n                <div class=\"goods_name\">\n                    <span>").concat(product.name, "</span>\n                </div>\n                <div class=\"goods_season\">\n                    <p>").concat(product.engName, "</p>\n                </div>\n                <div class=\"goods_price\">\n                    <span>\u20A9").concat(product.price, "</span>\n                </div>\n        </div><!-- //goods -->\n    ");
   goodsOuter.appendChild(element);
 }); //TOP 상품목록
-
-_products.products.forEach(function (best) {
-  var element = document.createElement('div');
-  element.setAttribute('class', 'detail_goods');
-  element.innerHTML = "\n    <div class=\"pr_visual\">\n    <div class=\"pr_scode\">\n        <p>\uC2A4\uD0C0\uC77C\uCF54\uB4DC</p>\n        <span>".concat(best.code, "</span>\n    </div>\n    <div class=\"pr_img\">\n        ").concat(best.mainImg, "\n    </div>\n    <div class=\"pr_hoverimg\">\n        <ul>\n            <li><a href=\"\">").concat(best.detailImg01, "</a></li>\n            <li><a href=\"\">").concat(best.detailImg02, "</a></li>\n            <li><a href=\"\">").concat(best.detailImg03, "</a></li>\n            <li><a href=\"\">").concat(best.detailImg04, "</a></li>\n            <li><a href=\"\">").concat(best.detailImg05, "</a></li>\n        </ul>\n    </div><!-- //pr_hoverimg -->\n\n    <div class=\"wear_product\">\n        <div class=\"wp_title\">\n            <p>\uD568\uAED8 \uCC29\uC6A9\uD55C \uC0C1\uD488</p>\n        </div>\n        <div class=\"wp_img\">\n            ").concat(best.relateImg, "\n        </div>\n        <div class=\"wp_name\">\n            <p>").concat(best.relateName, "</p>\n        </div>\n        <div class=\"wp_color\">\n            <p>").concat(best.relateColor, "</p>\n        </div>\n        <div class=\"wp_price\">\n            <p>\u20A9").concat(best.relatePrice, "</p>\n        </div>\n    </div><!-- //wear_product -->\n\n    <div class=\"recently_product\">\n        <div class=\"rv\">\n            <div class=\"rv_title\">\n                <p>\uCD5C\uADFC \uBCF8 \uC0C1\uD488</p>\n            </div>\n            <div class=\"rv_img\">\n                ").concat(best.recentImg, "\n            </div>\n            <div class=\"rv_name\">\n                <p> ").concat(best.recentName, "</p>\n            </div>\n            <div class=\"rv_color\">\n                <p").concat(best.recentColor, "</p>\n            </div>\n            <div class=\"rv_price\">\n                <p>").concat(best.recentPrice, "</p>\n            </div>\n        </div><!-- //rv -->\n    </div><!-- //recently view -->\n</div><!-- //pr_visual -->\n\n<div class=\"pr_option\">\n    <div class=\"text_box\">\n        <div class=\"pr_name\">\n            <p>").concat(best.name, "</p>\n        </div><!-- //pr_name -->\n\n        <div class=\"pr_info pr_best\">\n            <p>BEST</p>\n        </div><!-- //pr_best -->\n\n        <div class=\"pr_sns\">\n            <div class=\"rating\">\n                <p><i class=\"fas fa-star\"></i></p>\n                <p><i class=\"fas fa-star\"></i></p>\n                <p><i class=\"fas fa-star\"></i></p>\n                <p><i class=\"fas fa-star\"></i></p>\n                <p><i class=\"fas fa-star\"></i></p>\n                <p>5.0</p>\n                <span>/5</span>\n            </div>\n            <div class=\"sns\">\n                <div class=\"save\">\n                    <i class=\"far fa-heart\"></i>\n                </div>\n                <div class=\"facebook\">\n                    <i class=\"fab fa-facebook-f\"></i>\n                </div>\n                <div class=\"twitter\">\n                    <i class=\"fab fa-twitter\"></i>\n                </div>\n            </div>\n        </div><!-- //pr_sns-->\n\n        <div class=\"pr_price\">\n            <div class=\"price_orgin\">\n                <p>").concat(best.price, "</p>\n            </div>\n            <div class=\"accumulate\">\n                <p>\uC801\uB9BD \u20A9").concat(best.accumulate, "</p>\n                <p>(").concat(best.percent, "%)</p>\n            </div>\n        </div><!-- //pr_price -->\n\n        <div class=\"delivery_info\">\n            <div class=\"info_box\">\n                <div class=\"info_title\">\n                    <p>\uBC30\uC1A1\uC815\uBCF4</p>\n                </div>\n                <div class=\"info_txt\">\n                    <p>10\uB9CC\uC6D0 \uC774\uD558 3,000\uC6D0, 10\uB9CC\uC6D0 \uC774\uC0C1 \uBB34\uB8CC\uBC30\uC1A1\n                        <a href=\"\"><i class=\"far fa-question-circle\"></i></a>\n                    </p>\n                    <p><span>2\uC2DC \uC774\uC804 \uC8FC\uBB38\uC2DC \uB0B4\uC77C(X)\uB3C4\uCC29 \uC608\uC815</span>\u3163\uB300\uD55C\uD1B5\uC6B4</p>\n                </div>\n            </div>\n\n            <div class=\"credit_box\">\n                <div class=\"credit_title\">\n                    <p>\uBB34\uC774\uC790\uD560\uBD80</p>\n                </div>\n                <div class=\"credit_txt\">\n                    <p>\uCD5C\uB300 6\uAC1C\uC6D4<span>(\uB2E8, \uC77C\uC2DC\uBD88 \uD560\uC778 \uBC0F \uBC95\uC778 \uCE74\uB4DC \uC0AC\uC6A9 \uBD88\uAC00)</span></p>\n                </div>\n            </div>\n        </div><!-- //delivery info -->\n\n    </div><!-- //text_box -->\n\n    <div class=\"pr_color\">\n        <div class=\"color_title\">\n            <p>\uC0C9\uC0C1</p>\n        </div>\n        <div class=\"color_wrapper\">\n            <div class=\"color\">\n                <input id=\"color_pr_01\">\n                <label for=\"color_pr_01\">\n                    ").concat(best.colorImg01, "\n                </label>\n            </div><!-- //color -->\n            <div class=\"color\">\n                <input id=\"color_pr_02\">\n                <label for=\"color_pr_02\">\n                    ").concat(best.colorImg02, "\n                </label>\n            </div><!-- //size -->\n            <div class=\"color\">\n                <input id=\"color_pr_03\">\n                <label for=\"color_pr_03\">\n                    ").concat(best.colorImg03, "\n                </label>\n            </div><!-- //color -->\n        </div><!-- //color_wrapper -->\n    </div><!-- //pr_color -->\n\n    <div class=\"pr_size\">\n        <div class=\"size_title\">\n            <p>\uC0AC\uC774\uC988</p>\n        </div>\n        <div class=\"size_wrapper\">\n            <div class=\"size\">\n                <button class=\"size_btn\">\n                    <p>XS</p>\n                </button>\n            </div>\n            <div class=\"size\">\n                <button class=\"size_btn\">\n                    <p>S</p>\n                </button>\n            </div>\n            <div class=\"size\">\n                <button class=\"size_btn\">\n                    <p>M</p>\n                </button>\n            </div>\n            <div class=\"size\">\n                <button class=\"size_btn\">\n                    <p>L</p>\n                </button>\n            </div>\n            <div class=\"size\">\n                <button class=\"size_btn last_btn\">\n                    <p>XL</p>\n                </button>\n            </div>\n        </div>\n    </div><!-- //pr_size -->\n\n    <div class=\"n_pay\">\n        <div class=\"n_pay_left_area\">\n            <div class=\"n_pay_img\">\n                <img src=\"./images/n_pay_logo.png\" alt=\"\uB124\uC774\uBC84\uD398\uC774\uB85C\uACE0\">\n            </div>\n            <p>\uB124\uC774\uBC84\uD398\uC774 \uD3EC\uC778\uD2B8 \uD61C\uD0DD</p>\n        </div>\n        <span>\uCD5C\uB300 3%\uC801\uB9BD</span>\n    </div>\n\n    <div class=\"pr_buy\">\n        <div class=\"size_box\">\n            <button class=\"size_btn\">\n                <i class=\"ri-t-shirt-line\"></i>\n                <i class=\"fas fa-arrows-alt-v\"></i>\n                \uACE0\uAC1D\uB2D8 \uC0AC\uC774\uC988\uB97C \uCC3E\uC544\uBCF4\uC138\uC694</button>\n        </div>\n        <div class=\"btn_box\">\n            <div class=\"cart_box\">\n                <button class=\"cart_btn\">\uC7A5\uBC14\uAD6C\uB2C8</button>\n            </div>\n            <div class=\"buy_box\">\n                <button class=\"buy_btn\">\uAD6C\uB9E4\uD558\uAE30</button>\n            </div>\n        </div>\n        <p class=\"p_txt\">*\uC8FC\uBB38/\uBC30\uC1A1/\uBC18\uD488 \uB4F1 \uC77C\uBC18 \uBB38\uC758\uB294 1:1\uBB38\uC758\uB97C \uC774\uC6A9\uD574 \uC8FC\uC2DC\uAE30 \uBC14\uB78D\uB2C8\uB2E4.</p>\n    </div><!-- //pr_buy -->\n</div><!-- //pr_option -->\n    ");
-}); //BEST 상품 디테일페이지
-},{"./products.js":"js/products.js"}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./products.js":"js/products.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -988,7 +730,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64178" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58184" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
@@ -1132,5 +874,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/product_import.js"], null)
+},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/product_import.js"], null)
 //# sourceMappingURL=/product_import.1dcff1fc.js.map

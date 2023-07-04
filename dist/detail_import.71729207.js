@@ -568,69 +568,7 @@ function showDetailPage(productId) {
   detailProduct.innerHTML = "\n    <div class=\"pr_visual\">\n      <div class=\"pr_scode\">\n        <p>\uC2A4\uD0C0\uC77C\uCF54\uB4DC</p>\n        <span>".concat(detail.code, "</span>\n      </div>\n      <div class=\"pr_img\">\n        <img src=\"").concat(detail.mainImg, "\" alt=\"\uBA54\uC778 \uC774\uBBF8\uC9C0\">\n      </div>\n      <div class=\"pr_hoverimg\">\n        <ul>\n          <li><a href=\"\"><img src=\"").concat(detail.detailImg01, "\" alt=\"\uC0C1\uC138 \uC774\uBBF8\uC9C0 1\"></a></li>\n          <li><a href=\"\"><img src=\"").concat(detail.detailImg02, "\" alt=\"\uC0C1\uC138 \uC774\uBBF8\uC9C0 2\"></a></li>\n          <li><a href=\"\"><img src=\"").concat(detail.detailImg03, "\" alt=\"\uC0C1\uC138 \uC774\uBBF8\uC9C0 3\"></a></li>\n          <li><a href=\"\"><img src=\"").concat(detail.detailImg04, "\" alt=\"\uC0C1\uC138 \uC774\uBBF8\uC9C0 4\"></a></li>\n          <li><a href=\"\"><img src=\"").concat(detail.detailImg05, "\" alt=\"\uC0C1\uC138 \uC774\uBBF8\uC9C0 5\"></a></li>\n        </ul>\n      </div><!-- //pr_hoverimg -->\n\n      <div class=\"wear_product\">\n        <div class=\"wp_title\">\n          <p>\uD568\uAED8 \uCC29\uC6A9\uD55C \uC0C1\uD488</p>\n        </div>\n        <div class=\"wp_img\">\n          <img src=\"").concat(detail.relateImg, "\" alt=\"\uAD00\uB828 \uC0C1\uD488 \uC774\uBBF8\uC9C0\">\n        </div>\n        <div class=\"wp_name\">\n          <p>").concat(detail.relateName, "</p>\n        </div>\n        <div class=\"wp_color\">\n          <p>").concat(detail.relateColor, "</p>\n        </div>\n        <div class=\"wp_price\">\n          <p>\u20A9").concat(detail.relatePrice, "</p>\n        </div>\n      </div><!-- //wear_product -->\n\n      <div class=\"recently_product\">\n        <div class=\"rv\">\n          <div class=\"rv_title\">\n            <p>\uCD5C\uADFC \uBCF8 \uC0C1\uD488</p>\n          </div>\n          <div class=\"rv_img\">\n            <img src=\"").concat(detail.recentImg, "\" alt=\"\uCD5C\uADFC \uBCF8 \uC0C1\uD488 \uC774\uBBF8\uC9C0\">\n          </div>\n          <div class=\"rv_name\">\n            <p>").concat(detail.recentName, "</p>\n          </div>\n          <div class=\"rv_color\">\n            <p>").concat(detail.recentColor, "</p>\n          </div>\n          <div class=\"rv_price\">\n            <p>").concat(detail.recentPrice, "</p>\n          </div>\n        </div><!-- //rv -->\n      </div><!-- //recently view -->\n    </div><!-- //pr_visual -->\n\n    <div class=\"pr_option\">\n      <div class=\"text_box\">\n        <div class=\"pr_name\">\n          <p>").concat(detail.name, "</p>\n        </div><!-- //pr_name -->\n\n        <div>");
   prWrap.appendChild(detailProduct);
 }
-},{"./detail.js":"js/detail.js"}],"main.js":[function(require,module,exports) {
-"use strict";
-
-var _detail_import = _interopRequireDefault(require("./js/detail_import.js"));
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-document.addEventListener("DOMContentLoaded", function () {
-  var topBtn = document.querySelector(".top_btn");
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > 200) {
-      gsap.to(topBtn, 0.3, {
-        opacity: 1
-      });
-    } else {
-      gsap.to(topBtn, 0.3, {
-        opacity: 0
-      });
-    }
-  }); //window_scroll_event
-
-  topBtn.addEventListener("click", function () {
-    gsap.to(window, 0.5, {
-      scrollTo: 0
-    });
-  }); // top버튼 누르면 상단으로 이동
-
-  var filterBtn = document.querySelector(".filter_btn");
-  var filterArea = document.querySelector(".filter_area");
-  var state = false;
-  filterBtn.addEventListener("click", function () {
-    if (!state) {
-      filterArea.style.display = "block";
-      state = true;
-    } else {
-      filterArea.style.display = "none";
-      state = false;
-    }
-  }); //필터 ON/OFF
-}); //DOCUMENT
-
-window.addEventListener("DOMContentLoaded", function () {
-  var goods = document.querySelectorAll(".goods");
-  goods.forEach(function (value) {});
-}); //WINDOW
-
-var prWrap = document.querySelector(".pr_wrap");
-function renderProductList() {
-  // 상품 목록 생성
-  _detail_import.default.forEach(function (detail) {
-    var detailProduct = document.createElement("div");
-    detailProduct.setAttribute("class", "detail_goods");
-    // 상품 정보 표시
-
-    // 클릭 이벤트 추가
-    detailProduct.addEventListener("click", function () {
-      showDetailPage(detail.id);
-    });
-    prWrap.appendChild(detailProduct);
-  });
-}
-
-// 페이지 로드 시 상품 목록 출력
-renderProductList();
-},{"./js/detail_import.js":"js/detail_import.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./detail.js":"js/detail.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -655,7 +593,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55043" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58184" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
@@ -799,5 +737,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","main.js"], null)
-//# sourceMappingURL=/main.1f19ae8e.js.map
+},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/detail_import.js"], null)
+//# sourceMappingURL=/detail_import.71729207.js.map

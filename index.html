@@ -29,6 +29,8 @@
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
 
+
+
 </head>
 
 <body>
@@ -97,7 +99,7 @@
                 <div class="swiper-wrapper">
                     <!-- Slides -->
 
-                    <div class="swiper-slide best_goods" data-product-id="best_01">
+                    <div class="swiper-slide best_goods" id="best01" onclick="gotoDetailPage('best_01')"> >
                         <P>Best 1</P>
                         <div class="more">
                             <p>S/S TAMAS
@@ -108,7 +110,7 @@
                         <img src="./images/best_01.jpg" alt="베스트01" class="best_img">
                     </div><!-- //Best_01 -->
 
-                    <div class="swiper-slide best_goods" data-product-id="best_02">
+                    <div class="swiper-slide best_goods"  id="best02" onclick="gotoDetailPage('best_02')">
                         <P>Best 2</P>
                         <div class="more">
                             <p>S/S TAMAS
@@ -119,7 +121,7 @@
                         <img src="./images/best_02.jpg" alt="베스트02" class="best_img">
                     </div><!-- //Best_02 -->
 
-                    <div class="swiper-slide best_goods" data-product-id="best_03">
+                    <div class="swiper-slide best_goods"  id="best03" onclick="gotoDetailPage('best_03')">
                         <P>Best 3</P>
                         <div class="more">
                             <p>SINGLE KNEE
@@ -130,7 +132,7 @@
                         <img src="./images/best_03.jpg" alt="베스트03" class="best_img">
                     </div><!-- //Best_03 -->
 
-                    <div class="swiper-slide best_goods" data-product-id="best_04">
+                    <div class="swiper-slide best_goods"  id="best04" onclick="gotoDetailPage('best_04')">
                         <P>Best 4</P>
                         <div class="more">
                             <p>S/S TAMAS
@@ -141,7 +143,7 @@
                         <img src="./images/best_04.jpg" alt="베스트04" class="best_img">
                     </div><!-- //Best_04 -->
 
-                    <div class="swiper-slide best_goods" data-product-id="best_05">
+                    <div class="swiper-slide best_goods"  id="best05" onclick="gotoDetailPage('best_05')">
                         <P>Best 5</P>
                         <div class="more">
                             <p>COASTAL JACKET</p>
@@ -150,7 +152,7 @@
                         <img src="./images/best_05.jpg" alt="베스트05" class="best_img">
                     </div><!-- //Best_05 -->
 
-                    <div class="swiper-slide best_goods" data-product-id="best_06">
+                    <div class="swiper-slide best_goods"  id="best06" onclick="gotoDetailPage('best_06')">
                         <P>Best 6</P>
                         <div class="more">
                             <p>ISLAND
@@ -162,7 +164,7 @@
                         <img src="./images/best_06.jpg" alt="베스트06" class="best_img">
                     </div><!-- //Best_06 -->
 
-                    <div class="swiper-slide best_goods" data-product-id="best_07">
+                    <div class="swiper-slide best_goods"  id="best07" onclick="gotoDetailPage('best_07')">
                         <P>Best 7</P>
                         <div class="more">
                             <p>COASTAL JACKET</p>
@@ -171,7 +173,7 @@
                         <img src="./images/best_07.jpg" alt="베스트07" class="best_img">
                     </div><!-- //Best_07 -->
 
-                    <div class="swiper-slide best_goods" data-product-id="best_08">
+                    <div class="swiper-slide best_goods"  id="best08" onclick="gotoDetailPage('best_08')">
                         <P>Best 8</P>
                         <div class="more">
                             <p>COLE CARGO
@@ -577,7 +579,16 @@
 
 </script>
 
+        
+    <script>
+        function gotoDetailPage(productId) {
+  // productId에 해당하는 상품 상세 페이지 URL을 생성합니다.
+  const detailPageUrl = `./detail.html/${productId}.html`;
 
+  // 생성된 URL로 페이지를 이동합니다.
+  window.location.href = detailPageUrl;
+}
+    </script>
 <script>
     var swiper = new Swiper('.swiper-container', {
     });
