@@ -1,12 +1,9 @@
-import { products, best, NEW } from "./products.js";
+import { products } from "./products.js";
 
 const goodsOuter = document.querySelector(".goods_area .goods_outer");
 //sub_page TOP 상품목록
-const prWrap = document.querySelector(".wrap_ex .pr_wrap");
-//detail best상품
 
 console.log(goodsOuter);
-console.log(prWrap);
 
 products.forEach((product) => {
   let element = document.createElement("div");
