@@ -261,6 +261,7 @@ h2 {
 .lookbook .lookbook_outer .right_area .img_outer .lookbook_img {
   width: 300px;
   height: 300px;
+  overflow: hidden;
 }
 .lookbook .lookbook_outer .right_area .img_outer .lookbook_img img {
   width: 100%;
