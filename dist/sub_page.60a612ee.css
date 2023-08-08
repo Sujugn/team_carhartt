@@ -297,23 +297,17 @@ body {
   margin-top: 30px;
   font-weight: bold;
 }
-.wrap_ex .pagination {
-  display: flex;
-  width: 930px;
-  justify-content: flex-end;
-}
-.wrap_ex .pagination .link {
-  padding: 10px;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
+.wrap_ex .pagination ul {
   cursor: pointer;
-  font-size: 14px;
-  margin: 0 5px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
-.wrap_ex .pagination .link:hover {
-  background-color: #4154B1;
+.wrap_ex .pagination ul li {
+  padding: 10px;
+  margin: 0 10px;
+}
+.wrap_ex .pagination ul li:hover {
+  background-color: black;
   color: white;
 }
 

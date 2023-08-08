@@ -426,25 +426,20 @@ body {
     //wrap
 }
 .pagination {
+   ul{
+    cursor: pointer;
     display: flex;
-    width: 930px;
-    justify-content: flex-end;
-
-    .link{
+    justify-content: center;
+    
+    li{
         padding: 10px;
-        border-radius: 50%;
-        width: 20px; height: 20px;
-        cursor: pointer;
-        font-size: 14px;
-        margin: 0 5px;
-        text-align: center;
-
+        margin: 0 10px;
         &:hover{
-            background-color: #4154B1;
+            background-color: black;
             color: white;
         }
     }
-
+   }
 }//pagination
 
 

@@ -127,397 +127,594 @@ exports.products = exports.NEW = void 0;
 var products = [{
   name: "반팔 켄웨이 니트 폴로 블랙",
   engName: "S/S KENWAY KNIT POLO",
+  category: "knit",
+  color: "black",
   price: "148,000",
+  soldOut: false,
   image: "./images/Top_01.jpg",
   hoverImage: "./images/Top_01_hover.jpg"
 }, {
   name: "반팔 켄웨이 니트 폴로 네이비",
   engName: "S/S KENWAY KNIT POLO",
+  category: "knit",
+  color: "navy",
   price: "148,000",
+  soldOut: false,
   image: "./images/Top_02.jpg",
   hoverImage: "./images/Top_02_hover.jpg"
 }, {
   name: "반팔 켄웨이 니트 폴로 키위",
   engName: "S/S KENWAY KNIT POLO",
+  category: "knit",
+  color: "green",
   price: "148,000",
+  soldOut: true,
   image: "./images/Top_03.jpg",
   hoverImage: "./images/Top_03_hover.jpg"
 }, {
   name: "반팔 켄웨이 니트 폴로 화이트 스완",
   engName: "S/S KENWAY KNIT POLO",
+  category: "knit",
+  color: "white",
   price: "148,000",
+  soldOut: false,
   image: "./images/Top_04.jpg",
   hoverImage: "./images/Top_04_hover.jpg"
 }, {
   name: "반팔 이노베이션 포켓 티셔츠 블랙",
   engName: "S/S INNOVATION POCKET T-SHIRT",
+  category: "t-shirt",
+  color: "black",
   price: "85,000",
+  soldOut: false,
   image: "./images/Top_05.jpg",
   hoverImage: "./images/Top_05_hover.jpg"
 }, {
   name: "반팔 이노베이션 포켓 티셔츠 테이데",
   engName: "S/S INNOVATION POCKET T-SHIRT",
+  category: "t-shirt",
+  color: "light-brown",
   price: "85,000",
+  soldOut: false,
   image: "./images/Top_06.jpg",
   hoverImage: "./images/Top_06_hover.jpg"
 }, {
   name: "반팔 이노베이션 포켓 티셔츠 화이트",
   engName: "S/S INNOVATION POCKET T-SHIRT",
+  category: "t-shirt",
+  color: "white",
   price: "85,000",
+  soldOut: false,
   image: "./images/Top_07.jpg",
   hoverImage: "./images/Top_07_hover.jpg"
 }, {
   name: "반팔 라이프가즈 티셔츠 블랙",
   engName: "S/S LIFEGUARDS T-SHIRT",
+  category: "t-shirt",
+  color: "black",
   price: "75,000",
+  soldOut: false,
   image: "./images/Top_08.jpg",
   hoverImage: "./images/Top_08_hover.jpg"
 }, {
   name: "반팔 타마스 포켓 티셔츠 블랙",
   engName: "S/S TAMAS POCKET T-SHIRT",
+  category: "t-shirt",
+  color: "black",
   price: "88,000",
+  soldOut: false,
   image: "./images/Top_09.jpg",
   hoverImage: "./images/Top_09_hover.jpg"
 }, {
   name: "반팔 크래프트 셔츠 제우스 린스드",
   engName: "S/S CRAFT SHIRT",
+  category: "shirt",
+  color: "teal",
   price: "123,000",
+  soldOut: false,
   image: "./images/Top_10.jpg",
   hoverImage: "./images/Top_10_hover.jpg"
 }, {
   name: "반팔 크래프트 셔츠 쥐라 린스드",
   engName: "S/S WYNTON SHIRT",
+  category: "shirt",
+  color: "navy",
   price: "123,000",
+  soldOut: false,
   image: "./images/Top_11.jpg",
   hoverImage: "./images/Top_11_hover.jpg"
 }, {
   name: "반팔 윈튼 셔츠 타마린드/더스티 H",
   engName: "S/S WYNTON SHIRT",
+  category: "shirt",
+  color: "brown",
   price: "153,000",
   image: "./images/Top_12.jpg",
   hoverImage: "./images/Top_12_hover.jpg"
 }, {
   name: "반팔 유니티 티셔츠 화이트",
   engName: "S/S UNITY T-SHIRT",
+  category: "t-shirt",
+  color: "white",
   price: "83,000",
+  soldOut: false,
   image: "./images/Top_13.jpg",
   hoverImage: "./images/Top_13_hover.jpg"
 }, {
   name: "반팔 유니티 티셔츠 블랙",
   engName: "S/S UNITY T-SHIRT",
+  category: "t-shirt",
+  color: "black",
   price: "83,000",
+  soldOut: false,
   image: "./images/Top_14.jpg",
   hoverImage: "./images/Top_14_hover.jpg"
 }, {
   name: "반팔 바칸제 티셔츠 피신",
   engName: "S/S VACANZE T-SHIRT",
+  category: "t-shirt",
+  color: "skyblue",
   price: "78,000",
+  soldOut: false,
   image: "./images/Top_15.jpg",
   hoverImage: "./images/Top_15_hover.jpg"
 }, {
   name: "반팔 바칸제 티셔츠 시트론",
   engName: "S/S VACANZE T-SHIRT",
+  category: "t-shirt",
+  color: "pale-yellow",
   price: "78,000",
+  soldOut: false,
   image: "./images/Top_16.jpg",
   hoverImage: "./images/Top_16_hover.jpg"
 }, {
   name: "반팔 말린 티셔츠 화이트",
   engName: "S/S MARLIN T-SHIRT",
+  category: "t-shirt",
+  color: "white",
   price: "78,000",
+  soldOut: false,
   image: "./images/Top_17.jpg",
   hoverImage: "./images/Top_17_hover.jpg"
 }, {
   name: "반팔 말린 티셔츠 라주라이트",
   engName: "S/S MARLIN T-SHIRT",
+  category: "t-shirt",
+  color: "blue",
   price: "78,000",
+  soldOut: false,
   image: "./images/Top_18.jpg",
   hoverImage: "./images/Top_18_hover.jpg"
 }, {
   name: "반팔 로커 티셔츠 애쉬 헤더/브라운",
   engName: "S/S LOCKER T-SHIRT",
+  category: "t-shirt",
+  color: "white",
   price: "62,400",
+  soldOut: false,
   image: "./images/Top_19.jpg",
   hoverImage: "./images/Top_19_hover.jpg"
 }, {
   name: "반팔 로커 티셔츠 블랙/화이트",
   engName: "S/S LOCKER T-SHIRT",
+  category: "t-shirt",
+  color: "black",
   price: "62,400",
+  soldOut: false,
   image: "./images/Top_20.jpg",
   hoverImage: "./images/Top_20_hover.jpg"
 }, {
   name: "반팔 크로모 티셔츠 블랙 크로모",
   engName: "S/S CHROMO T-SHIRT",
+  category: "t-shirt",
+  color: "navy",
   price: "70,400",
+  soldOut: false,
   image: "./images/Top_21.jpg",
   hoverImage: "./images/Top_21_hover.jpg"
 }, {
   name: "반팔 크로모 티셔츠 아말피 크로모",
   engName: "S/S CHROMO T-SHIRT",
+  category: "t-shirt",
+  color: "skyblue",
   price: "70,400",
+  soldOut: false,
   image: "./images/Top_22.jpg",
   hoverImage: "./images/Top_22_hover.jpg"
 }, {
   name: "반팔 크로모 티셔츠 트리하우스 크로모",
   engName: "S/S CHROMO T-SHIRT",
+  category: "t-shirt",
+  color: "green",
   price: "70,400",
+  soldOut: false,
   image: "./images/Top_23.jpg",
   hoverImage: "./images/Top_23_hover.jpg"
 }, {
   name: "반팔 넬슨 티셔츠 피신 가먼트 다이드",
   engName: "S/S NELSON T-SHIRT",
+  category: "t-shirt",
+  color: "skyblue",
   price: "78,000",
+  soldOut: false,
   image: "./images/Top_24.jpg",
   hoverImage: "./images/Top_24_hover.jpg"
 }, {
   name: "반팔 넬슨 티셔츠 왁스 가먼트 다이드",
   engName: "S/S NELSON T-SHIRT",
+  category: "t-shirt",
+  color: "white",
   price: "78,000",
+  soldOut: false,
   image: "./images/Top_25.jpg",
   hoverImage: "./images/Top_25_hover.jpg"
 }, {
   name: "반팔 마스터 셔츠 블랙",
   engName: "S/S MASTER SHIRT",
+  category: "shirt",
+  color: "black",
   price: "113,000",
+  soldOut: false,
   image: "./images/Top_26.jpg",
   hoverImage: "./images/Top_26_hover.jpg"
 }, {
   name: "반팔 마스터 셔츠 테이데",
   engName: "S/S MASTER nSHIRT",
+  category: "shirt",
+  color: "light-brown",
   price: "113,000",
+  soldOut: false,
   image: "./images/Top_27.jpg",
   hoverImage: "./images/Top_27_hover.jpg"
 }, {
   name: "디트로이트 자켓 블랙/블랙 린스드",
   engName: "DETROIT JACKET",
+  category: "jacket",
   price: "288,000",
+  color: "black",
+  soldOut: false,
   image: "./images/Top_28.jpg",
   hoverImage: "./images/Top_28_hover.jpg"
 }, {
   name: "몬트레이 셔츠 자켓 키위 원 워시드",
   engName: "MONTEREY SHIRT JAC",
+  category: "jacket",
   price: "218,000",
+  color: "green",
+  soldOut: false,
   image: "./images/Top_29.jpg",
   hoverImage: "./images/Top_29_hover.jpg"
 }, {
   name: "타일러 자켓 블랙",
   engName: "TYLER JACKET",
+  category: "jacket",
+  color: "black",
   price: "254,400",
+  soldOut: false,
   image: "./images/Top_30.jpg",
   hoverImage: "./images/Top_30_hover.jpg"
 }, {
   name: "타일러 자켓 유카",
   engName: "TYLER JACKET",
+  category: "jacket",
+  color: "green",
   price: "254,400",
+  soldOut: false,
   image: "./images/Top_31.jpg",
   hoverImage: "./images/Top_31_hover.jpg"
 }, {
   name: "바유 스웻셔츠 블랙 가먼트 다이드",
   engName: "BAYOU SWEATSHIRT",
+  category: "shirt",
+  color: "teal",
   price: "158,400",
+  soldOut: false,
   image: "./images/Top_32.jpg",
   hoverImage: "./images/Top_32_hover.jpg"
 }, {
   name: "로커 스웻셔츠 블랙/화이트",
   engName: "LOCKER SWEATSHIRT",
+  category: "shirt",
+  color: "black",
   price: "110,400",
+  soldOut: false,
   image: "./images/Top_33.jpg",
   hoverImage: "./images/Top_33_hover.jpg"
 }, {
   name: "로커 스웻셔츠 애쉬 헤더/브라운",
   engName: "LOCKER SWEATSHIRT",
+  category: "shirt",
+  color: "white",
   price: "110,400",
+  soldOut: false,
   image: "./images/Top_34.jpg",
   hoverImage: "./images/Top_34_hover.jpg"
 }, {
   name: "로커 스웻셔츠 트리하우스/옐로우",
   engName: "LOCKER SWEATSHIRT",
+  category: "shirt",
+  color: "green",
   price: "110,400",
+  soldOut: false,
   image: "./images/Top_35.jpg",
   hoverImage: "./images/Top_35_hover.jpg"
 }, {
   name: "후디드 크로모 스웻셔츠 블랙 ",
   engName: "HOODED CHROMO SWEATSHIRT",
+  category: "shirt",
+  color: "navy",
   price: "166,400",
+  soldOut: false,
   image: "./images/Top_36.jpg",
   hoverImage: "./images/Top_36_hover.jpg"
 }, {
   name: "후디드 크로모 스웻셔츠 트리하우스",
   engName: "HOODED CHROMO SWEATSHIRT",
+  category: "shirt",
+  color: "green",
   price: "166,400",
+  soldOut: false,
   image: "./images/Top_37.jpg",
   hoverImage: "./images/Top_37_hover.jpg"
 }, {
   name: "후디드 듀얼 스웻셔츠 애쉬 헤더",
   engName: "HOODED DUEL SWEATSHIRT",
+  category: "shirt",
+  color: "white",
   price: "150,400",
+  soldOut: false,
   image: "./images/Top_38.jpg",
   hoverImage: "./images/Top_38_hover.jpg"
 }, {
   name: "후디드 듀얼 스웻셔츠 아가베",
   engName: "HOODED DUEL SWEATSHIRT",
+  category: "shirt",
+  color: "green",
   price: " 150,400",
+  soldOut: false,
   image: "./images/Top_39.jpg",
   hoverImage: "./images/Top_39_hover.jpg"
 }, {
   name: "후디드 엘지 스웻셔츠 블랙/왁스",
   engName: "HOODED ELZY SWEATSHIRT",
+  category: "shirt",
+  color: "black",
   price: "172,000",
+  soldOut: false,
   image: "./images/Top_40.jpg",
   hoverImage: "./images/Top_40_hover.jpg"
 }, {
   name: "후디드 엘지 스웻셔츠 해밀턴 브라운/토바코",
   engName: "HOODED ELZY SWEATSHIRT",
+  category: "hood",
+  color: "brown",
   price: "172,000",
+  soldOut: false,
   image: "./images/Top_41.jpg",
   hoverImage: "./images/Top_41_hover.jpg"
 }, {
   name: "알링 자켓 블랙 페이디드",
   engName: "ARLING JACKET",
+  category: "jacket",
+  color: "light-brown",
   price: "368,000",
+  soldOut: false,
   image: "./images/Top_42.jpg",
   hoverImage: "./images/Top_42_hover.jpg"
 }, {
   name: "스카일러 셔츠 자켓 블랙 가먼트 다이드",
   engName: "SKYLER SHIRT JAC",
+  category: "jacket",
+  color: "black",
   price: "212,000",
+  soldOut: false,
   image: "./images/Top_43.jpg",
   hoverImage: "./images/Top_43_hover.jpg"
 }, {
   name: "스카일러 셔츠 자켓 스톰 블루 가먼트 다이드",
   engName: "STORM BLUE GARMENT DYED",
+  category: "jacket",
+  color: "blue",
   price: "212,000",
+  soldOut: false,
   image: "./images/Top_44.jpg",
   hoverImage: "./images/Top_44_hover.jpg"
 }, {
   name: "미시건 코트 블랙 가먼트 다이드",
   engName: "BLACK GARMENT DYED",
+  category: "jacket",
+  color: "blue",
   price: " 198,000",
+  soldOut: false,
   image: "./images/Top_45.jpg",
   hoverImage: "./images/Top_45_hover.jpg"
 }, {
   name: "미시건 코트 오프-화이트 린스드",
   engName: "MICHIGAN COAT",
+  category: "jacket",
+  color: "white",
   price: "198,000",
+  soldOut: false,
   image: "./images/Top_46.jpg",
   hoverImage: "./images/Top_46_hover.jpg"
 }, {
   name: "미시건 코트 라주라이트/블랙 린스드",
   engName: "MICHIGAN COAT",
+  category: "coat",
+  color: "blue",
   price: "228,000",
+  soldOut: false,
   image: "./images/Top_47.jpg",
   hoverImage: "./images/Top_47_hover.jpg"
 }, {
   name: "어웨이크 뉴욕 어웨이크 뉴욕 블랙 린스드",
   engName: "AWAKE NY OG ACTIVE JACKET",
+  category: "hood",
+  color: "black",
   price: "388,000",
+  soldOut: false,
   image: "./images/Top_48.jpg",
   hoverImage: "./images/Top_48_hover.jpg"
 }, {
   name: "몬트레이 셔츠 자켓 블랙 스톤 워시드",
   engName: "MONTEREY SHIRT JAC",
+  category: "shirt",
   price: " 170,400",
+  color: "black",
+  soldOut: false,
   image: "./images/Top_49.jpg",
   hoverImage: "./images/Top_49_hover.jpg"
 }, {
   name: "몬트레이 셔츠 자켓 블루 스톤 워시드",
   engName: "MONTEREY SHIRT JAC",
+  category: "shirt",
+  color: "blue",
   price: "170,400",
+  soldOut: false,
   image: "./images/Top_50.jpg",
   hoverImage: "./images/Top_50_hover.jpg"
 }, {
   name: "아버 베스트 블랙 페이디드",
   engName: "ARBOR VEST",
+  color: "light_brown",
+  category: "vest",
   price: "202,400",
+  soldOut: false,
   image: "./images/Top_51.jpg",
   hoverImage: "./images/Top_51_hover.jpg"
 }, {
   name: "아버 베스트 타마린드 페이디드",
   engName: "ARBOR VEST",
+  category: "vest",
+  color: "brown",
   price: "202,400",
+  soldOut: false,
   image: "./images/Top_52.jpg",
   hoverImage: "./images/Top_52_hover.jpg"
 }, {
   name: "코스탈 자켓 블랙/화이트",
   engName: "COASTAL JACKET",
+  category: "jacket",
+  color: "black",
   price: "248,000",
+  soldOut: false,
   image: "./images/Top_53.jpg",
   hoverImage: "./images/Top_53_hover.jpg"
 }, {
   name: "코스탈 자켓 화이트/블랙",
   engName: "COASTAL JACKET",
+  category: "jacket",
+  color: "white",
   price: "248,000",
+  soldOut: false,
   image: "./images/Top_54.jpg",
   hoverImage: "./images/Top_54_hover.jpg"
 }, {
   name: "살레도 자켓 블랙 라이트 유즈드 워시",
   engName: "BLACK LIGHT USED WASH",
+  category: "jacket",
+  color: "gray",
   price: "245,000",
+  soldOut: false,
   image: "./images/Top_55.jpg",
   hoverImage: "./images/Top_55_hover.jpg"
 }, {
   name: "살레도 자켓 블루 스톤 워시드",
   engName: "BLUE STONE WASHED",
+  category: "jacket",
+  color: "blue",
   price: "208,000",
+  soldOut: false,
   image: "./images/Top_56.jpg",
   hoverImage: "./images/Top_56_hover.jpg"
 }, {
   name: "코스트 스테이트 스웻셔츠 애쉬 헤더",
   engName: "COAST STATE SWEATSHIRT",
+  category: "shirt",
+  color: "white",
   price: "145,000",
+  soldOut: false,
   image: "./images/Top_57.jpg",
   hoverImage: "./images/Top_57_hover.jpg"
 }, {
   name: "넬슨 스웻셔츠 피신 가먼트 다이드",
   engName: "NELSON SWEATSHIRT",
+  category: "shirt",
+  color: "skyblue",
   price: "130,400",
+  soldOut: false,
   image: "./images/Top_58.jpg",
   hoverImage: "./images/Top_58_hover.jpg"
 }, {
   name: "칼하트 스웨트셔츠 블랙/화이트",
   engName: "CARHARTT SWEATSHIRT",
+  category: "shirt",
+  color: "black",
   price: "138,000",
+  soldOut: false,
   image: "./images/Top_59.jpg",
   hoverImage: "./images/Top_59_hover.jpg"
 }, {
   name: "칼하트 스웻셔츠 그레이 헤더/블랙",
   engName: "CARHARTT SWEATSHIRT",
+  category: "shirt",
+  color: "gray",
   price: "138,000",
+  soldOut: false,
   image: "./images/Top_60.jpg",
   hoverImage: "./images/Top_60_hover.jpg"
 }, {
   name: "후디드 칼하트 스웻셔츠 제우스/비올란다",
   engName: "HOODED CARHARTT SWEATSHIRT",
+  category: "shirt",
+  color: "gray",
   price: "118,400",
+  soldOut: false,
   image: "./images/Top_61.jpg",
   hoverImage: "./images/Top_61_hover.jpg"
 }, {
   name: "후디드 스퀘어 라벨 자켓 블랙",
   engName: "HOODED SQUARE LABEL JACKET",
+  category: "jacket",
+  color: "black",
   price: "153,000",
+  soldOut: false,
   image: "./images/Top_62.jpg",
   hoverImage: "./images/Top_62_hover.jpg"
 }, {
   name: "후디드 스퀘어 라벨 자켓 그레이 헤더",
   engName: "HOODED SQUARE LABEL JACKET",
+  category: "jacket",
+  color: "gray",
   price: "153,000",
+  soldOut: false,
   image: "./images/Top_63.jpg",
   hoverImage: "./images/Top_63_hover.jpg"
 }, {
   name: "후디드 스퀘어 라벨 자켓 해밀턴 브라운",
   engName: "HOODED SQUARE LABEL JACKET",
+  category: "jacket",
+  color: "brown",
   price: "153,000",
+  soldOut: false,
   image: "./images/Top_64.jpg",
   hoverImage: "./images/Top_64_hover.jpg"
 }, {
   name: "후디드 매디슨 자켓 블랙/왁스",
   engName: "HOODED MADISON JACKET",
+  category: "jacket",
+  color: "black",
   price: " 153,000",
+  soldOut: false,
   image: "./images/Top_65.jpg",
   hoverImage: "./images/Top_65_hover.jpg"
 }, {
   name: "알토 자켓 라주라이트",
   engName: "ALTO JACKET",
+  category: "jacket",
+  color: "gray",
   price: "286,400",
+  soldOut: false,
   image: "./images/Top_66.jpg",
   hoverImage: "./images/Top_66_hover.jpg"
 }]; // subpage_top
@@ -692,27 +889,70 @@ exports.NEW = NEW;
 "use strict";
 
 var _products = require("./products.js");
-console.log(_products.products);
-var paging = 12;
-var myPage = Math.ceil(_products.products.length / 12);
-console.log(myPage);
-// pageBtn.addEventListener('click', function(){
-//     let inputPage = this.textContent
-
-//     for (let i = paging * inputPage-1; i < paging*inputPage; i++){
-
-//     }
-// })
-
-// let paging = 12
-
-var pagination = document.querySelector('.pagination');
-for (var i = 1; i <= 6; i++) {
-  var asd = document.createElement('div');
-  asd.setAttribute('class', 'link');
-  asd.textContent = i;
-  pagination.appendChild(asd);
-}
+document.addEventListener('DOMContentLoaded', function () {
+  var itemsPerPage = 6;
+  var pagesPerSet = 5;
+  var totalPages = Math.ceil(_products.products.length / itemsPerPage);
+  var totalSets = Math.ceil(totalPages / pagesPerSet);
+  var currentSet = 1;
+  function createPagination() {
+    var pageDiv = document.querySelector('.pagination');
+    var paginationHTML = "\n      <ul>\n        <li class=\"prev-btn\"><span><i class=\"fas fa-angle-left\"></i>Prev</span></li>\n        ".concat(generatePageNumbers(), "\n        <li class=\"next-btn\"><span>Next<i class=\"fas fa-angle-right\"></i></span></li>\n      </ul>\n    ");
+    pageDiv.innerHTML = paginationHTML;
+    var pageLinks = pageDiv.querySelectorAll('.numb');
+    pageLinks.forEach(function (link, index) {
+      link.addEventListener('click', function () {
+        return showPage(index + (currentSet - 1) * pagesPerSet + 1);
+      });
+    });
+    var prevBtn = pageDiv.querySelector('.prev-btn');
+    var nextBtn = pageDiv.querySelector('.next-btn');
+    prevBtn.addEventListener('click', function () {
+      return showPrevSet();
+    });
+    nextBtn.addEventListener('click', function () {
+      return showNextSet();
+    });
+  }
+  function generatePageNumbers() {
+    var pageNumbersHTML = '';
+    var startPage = (currentSet - 1) * pagesPerSet + 1;
+    var endPage = Math.min(startPage + pagesPerSet - 1, totalPages);
+    for (var i = startPage; i <= endPage; i++) {
+      pageNumbersHTML += "<li class=\"numb\"><span>".concat(i, "</span></li>");
+    }
+    return pageNumbersHTML;
+  }
+  function showPage(pageNumber) {
+    var startIndex = (pageNumber - 1) * itemsPerPage;
+    var endIndex = startIndex + itemsPerPage;
+    var currentPageData = _products.products.slice(startIndex, endIndex);
+    var goodsOuter = document.querySelector('.goods_outer');
+    goodsOuter.innerHTML = '';
+    currentPageData.forEach(function (value) {
+      var element = document.createElement('div');
+      element.setAttribute('class', 'goods');
+      element.innerHTML = "\n        <div class=\"goods_img\">\n          <img src=\"".concat(value.image, "\">\n          <img src=\"").concat(value.hoverImage, "\">\n          <div class=\"goods_cart\">\n            <i class=\"ri-shopping-cart-2-line\"></i>\n          </div>\n        </div>\n        <div class=\"goods_info info_best\">\n          <p>BEST</p>\n        </div>\n        <div class=\"goods_name\">\n          <span>").concat(value.name, "</span>\n        </div>\n        <div class=\"goods_season\">\n          <p>").concat(value.engName, "</p>\n        </div>\n        <div class=\"goods_price\">\n          <span>\u20A9").concat(value.price, "</span>\n        </div>\n      ");
+      goodsOuter.appendChild(element);
+    });
+  }
+  function showPrevSet() {
+    if (currentSet > 1) {
+      currentSet--;
+      createPagination();
+      showPage((currentSet - 1) * pagesPerSet + 1);
+    }
+  }
+  function showNextSet() {
+    if (currentSet < totalSets) {
+      currentSet++;
+      createPagination();
+      showPage((currentSet - 1) * pagesPerSet + 1);
+    }
+  }
+  createPagination();
+  showPage(1);
+});
 },{"./products.js":"js/products.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -738,7 +978,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52088" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "3767" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
