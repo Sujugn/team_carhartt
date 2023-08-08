@@ -96,8 +96,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-
-  
   createPagination();
   showPage(1);
+
+
+
 });

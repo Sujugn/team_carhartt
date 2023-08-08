@@ -87,6 +87,18 @@
 .header .header_box .lnb_outer .lnb_rank {
   font-size: 14px;
 }
+.header .search_box {
+  display: flex;
+  justify-content: center;
+}
+.header .search_box input {
+  width: 1000px;
+  height: 30px;
+}
+.header .search_box #search_btn {
+  width: 60px;
+  height: 30px;
+}
 
 .footer .footer_outer {
   background-color: black;

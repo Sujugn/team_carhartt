@@ -225,6 +225,7 @@ body {
 .wrap_ex .wrap .goods_area .filter_outer .checkbox .filter_key {
   font-size: 16px;
   display: flex;
+  align-items: center;
 }
 .wrap_ex .wrap .goods_area .filter_outer .checkbox .filter_key button {
   font-size: 16px;

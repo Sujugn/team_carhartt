@@ -122,6 +122,24 @@
     }
 
     //header_box
+
+    
+    .search_box{
+        display: flex;
+        justify-content: center;
+        // display: none;
+        input{
+            width: 1000px;
+            height: 30px;
+        }
+        #search_btn{
+            width: 60px;
+            height: 30px;
+        }
+
+    }
+
+
 }
 
 //header
